@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgPat" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#231A14"/>
+      <stop offset="50%" stop-color="#36251A"/>
+      <stop offset="100%" stop-color="#14100D"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bgPat)"/>
+  <!-- Nagara and Dravida Shikhara silhouettes -->
+  <path d="M150 280 L180 140 L210 280 Z" fill="#251D18" stroke="#D4AF37" stroke-width="2"/>
+  <path d="M300 280 L320 220 L330 180 L340 120 L350 180 L360 220 L380 280 Z" fill="#2A211B" stroke="#D4AF37" stroke-width="2"/>
+  <path d="M420 280 L440 160 L470 280 Z" fill="#251D18" stroke="#D4AF37" stroke-width="2"/>
+  <text x="300" y="325" font-family="sans-serif" font-size="22" font-weight="bold" fill="#FDFBF7" text-anchor="middle" letter-spacing="2">VIRUPAKSHA &amp; MALLIKARJUNA</text>
+  <text x="300" y="355" font-family="sans-serif" font-size="14" fill="#D4AF37" text-anchor="middle" letter-spacing="1">PATTADAKAL • UNESCO WORLD HERITAGE</text>
+</svg>

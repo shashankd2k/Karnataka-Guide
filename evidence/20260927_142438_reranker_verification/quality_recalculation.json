@@ -1,0 +1,1236 @@
+{
+  "summary": {
+    "total_queries": 24,
+    "evidence_differences_count": 4,
+    "evidence_differences": [
+      {
+        "query_id": "Q11",
+        "arm_15_ids": [
+          "23677e76-516d-4cce-972f-b74ac0ff1606",
+          "f65d980c-f74a-4c48-9ca3-b2d54545ebcc",
+          "32908665-c04a-4b70-b3e9-15bc7643cdde",
+          "b40b9e04-bc95-4789-8059-cac917c1d073",
+          "177133ba-59fd-4a52-8791-2347b71a476f"
+        ],
+        "arm_10_ids": [
+          "23677e76-516d-4cce-972f-b74ac0ff1606",
+          "f65d980c-f74a-4c48-9ca3-b2d54545ebcc",
+          "32908665-c04a-4b70-b3e9-15bc7643cdde",
+          "b40b9e04-bc95-4789-8059-cac917c1d073",
+          "b25e46f8-d7e1-4e7a-aa89-8fc227d8008d"
+        ],
+        "diff_indices": [
+          4
+        ]
+      },
+      {
+        "query_id": "Q14",
+        "arm_15_ids": [
+          "9562ad24-5749-4156-ad83-62b5d266841e",
+          "f65d980c-f74a-4c48-9ca3-b2d54545ebcc",
+          "32908665-c04a-4b70-b3e9-15bc7643cdde",
+          "b22c8669-1b07-4e2e-8c38-bd38818443c1",
+          "7c9f20a2-a5c9-41a7-9c18-86ad580b3aeb"
+        ],
+        "arm_10_ids": [
+          "9562ad24-5749-4156-ad83-62b5d266841e",
+          "32908665-c04a-4b70-b3e9-15bc7643cdde",
+          "b22c8669-1b07-4e2e-8c38-bd38818443c1",
+          "7c9f20a2-a5c9-41a7-9c18-86ad580b3aeb",
+          "35e88269-3850-4e45-b4dd-e19a41dc7d5a"
+        ],
+        "diff_indices": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "query_id": "Q15",
+        "arm_15_ids": [
+          "155e4935-d729-4681-9fb4-802bebf51a0b",
+          "b25e46f8-d7e1-4e7a-aa89-8fc227d8008d",
+          "4bd6803b-da4b-4000-bb84-25117456c326",
+          "79ba4a10-1a85-46c6-93d8-c422d274439a",
+          "fbb77ce6-1fa9-4818-b1c5-bd7f8ee0bc5c"
+        ],
+        "arm_10_ids": [
+          "155e4935-d729-4681-9fb4-802bebf51a0b",
+          "b25e46f8-d7e1-4e7a-aa89-8fc227d8008d",
+          "4bd6803b-da4b-4000-bb84-25117456c326",
+          "79ba4a10-1a85-46c6-93d8-c422d274439a",
+          "1eb060c8-0374-4e63-b4ad-6366ce160267"
+        ],
+        "diff_indices": [
+          4
+        ]
+      },
+      {
+        "query_id": "Q18",
+        "arm_15_ids": [
+          "35e88269-3850-4e45-b4dd-e19a41dc7d5a",
+          "9562ad24-5749-4156-ad83-62b5d266841e",
+          "7c9f20a2-a5c9-41a7-9c18-86ad580b3aeb",
+          "b22c8669-1b07-4e2e-8c38-bd38818443c1",
+          "1eb060c8-0374-4e63-b4ad-6366ce160267"
+        ],
+        "arm_10_ids": [
+          "35e88269-3850-4e45-b4dd-e19a41dc7d5a",
+          "9562ad24-5749-4156-ad83-62b5d266841e",
+          "7c9f20a2-a5c9-41a7-9c18-86ad580b3aeb",
+          "b22c8669-1b07-4e2e-8c38-bd38818443c1",
+          "bc3dbadb-1ae1-4687-8265-d0766c12e521"
+        ],
+        "diff_indices": [
+          4
+        ]
+      }
+    ],
+    "arm_15": {
+      "hit_at_1_count": 23,
+      "hit_at_1_pct": 95.83,
+      "hit_at_5_count": 24,
+      "hit_at_5_pct": 100.0,
+      "strict_multi_label_recall_at_5_pct": 95.83,
+      "sum_reciprocal_ranks": 23.5,
+      "unrounded_mrr": 0.9791666666666666,
+      "rounded_4dec_mrr": 0.9792,
+      "passes_literal_threshold_09792": false,
+      "passes_rounded_threshold_09792": true
+    },
+    "arm_10": {
+      "hit_at_1_count": 23,
+      "hit_at_1_pct": 95.83,
+      "hit_at_5_count": 24,
+      "hit_at_5_pct": 100.0,
+      "strict_multi_label_recall_at_5_pct": 95.83,
+      "sum_reciprocal_ranks": 23.5,
+      "unrounded_mrr": 0.9791666666666666,
+      "rounded_4dec_mrr": 0.9792,
+      "passes_literal_threshold_09792": false,
+      "passes_rounded_threshold_09792": true
+    },
+    "quality_regressions": []
+  },
+  "per_query_audit": [
+    {
+      "query_id": "Q01",
+      "category": "founder/patron",
+      "query_text": "Who commissioned the Belur Chennakeshava temple and why?",
+      "expected_relevance_set_size": 2,
+      "expected_chunk_ids": [
+        "d47453e8-5cd0-491e-baf2-46bfac0d9456",
+        "b3cac416-85ef-407f-800e-6ae10d6fbc0a"
+      ],
+      "arm_15": {
+        "top_5_chunk_ids": [
+          "d47453e8-5cd0-491e-baf2-46bfac0d9456",
+          "b40b9e04-bc95-4789-8059-cac917c1d073",
+          "f65d980c-f74a-4c48-9ca3-b2d54545ebcc",
+          "177133ba-59fd-4a52-8791-2347b71a476f",
+          "32908665-c04a-4b70-b3e9-15bc7643cdde"
+        ],
+        "matched_chunk_ids": [
+          "d47453e8-5cd0-491e-baf2-46bfac0d9456"
+        ],
+        "matched_count": 1,
+        "first_relevant_rank": 1,
+        "hit_at_1": 1,
+        "hit_at_5": 1,
+        "strict_recall_at_5": 0.5,
+        "reciprocal_rank": 1.0
+      },
+      "arm_10": {
+        "top_5_chunk_ids": [
+          "d47453e8-5cd0-491e-baf2-46bfac0d9456",
+          "b40b9e04-bc95-4789-8059-cac917c1d073",
+          "f65d980c-f74a-4c48-9ca3-b2d54545ebcc",
+          "177133ba-59fd-4a52-8791-2347b71a476f",
+          "32908665-c04a-4b70-b3e9-15bc7643cdde"
+        ],
+        "matched_chunk_ids": [
+          "d47453e8-5cd0-491e-baf2-46bfac0d9456"
+        ],
+        "matched_count": 1,
+        "first_relevant_rank": 1,
+        "hit_at_1": 1,
+        "hit_at_5": 1,
+        "strict_recall_at_5": 0.5,
+        "reciprocal_rank": 1.0
+      },
+      "ordered_evidence_identical": true
+    },
+    {
+      "query_id": "Q02",
+      "category": "founder/patron",
+      "query_text": "Which queen built the Virupaksha temple at Pattadakal?",
+      "expected_relevance_set_size": 1,
+      "expected_chunk_ids": [
+        "b40b9e04-bc95-4789-8059-cac917c1d073"
+      ],
+      "arm_15": {
+        "top_5_chunk_ids": [
+          "b40b9e04-bc95-4789-8059-cac917c1d073",
+          "fbb77ce6-1fa9-4818-b1c5-bd7f8ee0bc5c",
+          "1eb060c8-0374-4e63-b4ad-6366ce160267",
+          "d47453e8-5cd0-491e-baf2-46bfac0d9456",
+          "f65d980c-f74a-4c48-9ca3-b2d54545ebcc"
+        ],
+        "matched_chunk_ids": [
+          "b40b9e04-bc95-4789-8059-cac917c1d073"
+        ],
+        "matched_count": 1,
+        "first_relevant_rank": 1,
+        "hit_at_1": 1,
+        "hit_at_5": 1,
+        "strict_recall_at_5": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      "arm_10": {
+        "top_5_chunk_ids": [
+          "b40b9e04-bc95-4789-8059-cac917c1d073",
+          "fbb77ce6-1fa9-4818-b1c5-bd7f8ee0bc5c",
+          "1eb060c8-0374-4e63-b4ad-6366ce160267",
+          "d47453e8-5cd0-491e-baf2-46bfac0d9456",
+          "f65d980c-f74a-4c48-9ca3-b2d54545ebcc"
+        ],
+        "matched_chunk_ids": [
+          "b40b9e04-bc95-4789-8059-cac917c1d073"
+        ],
+        "matched_count": 1,
+        "first_relevant_rank": 1,
+        "hit_at_1": 1,
+        "hit_at_5": 1,
+        "strict_recall_at_5": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      "ordered_evidence_identical": true
+    },
+    {
+      "query_id": "Q03",
+      "category": "construction date",
+      "query_text": "What year was the Belur Chennakeshava temple commissioned?",
+      "expected_relevance_set_size": 1,
+      "expected_chunk_ids": [
+        "d47453e8-5cd0-491e-baf2-46bfac0d9456"
+      ],
+      "arm_15": {
+        "top_5_chunk_ids": [
+          "d47453e8-5cd0-491e-baf2-46bfac0d9456",
+          "32908665-c04a-4b70-b3e9-15bc7643cdde",
+          "f65d980c-f74a-4c48-9ca3-b2d54545ebcc",
+          "b40b9e04-bc95-4789-8059-cac917c1d073",
+          "177133ba-59fd-4a52-8791-2347b71a476f"
+        ],
+        "matched_chunk_ids": [
+          "d47453e8-5cd0-491e-baf2-46bfac0d9456"
+        ],
+        "matched_count": 1,
+        "first_relevant_rank": 1,
+        "hit_at_1": 1,
+        "hit_at_5": 1,
+        "strict_recall_at_5": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      "arm_10": {
+        "top_5_chunk_ids": [
+          "d47453e8-5cd0-491e-baf2-46bfac0d9456",
+          "32908665-c04a-4b70-b3e9-15bc7643cdde",
+          "f65d980c-f74a-4c48-9ca3-b2d54545ebcc",
+          "b40b9e04-bc95-4789-8059-cac917c1d073",
+          "177133ba-59fd-4a52-8791-2347b71a476f"
+        ],
+        "matched_chunk_ids": [
+          "d47453e8-5cd0-491e-baf2-46bfac0d9456"
+        ],
+        "matched_count": 1,
+        "first_relevant_rank": 1,
+        "hit_at_1": 1,
+        "hit_at_5": 1,
+        "strict_recall_at_5": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      "ordered_evidence_identical": true
+    },
+    {
+      "query_id": "Q04",
+      "category": "construction date",
+      "query_text": "When was Badami Cave 3 carved and which king commissioned it?",
+      "expected_relevance_set_size": 1,
+      "expected_chunk_ids": [
+        "79ba4a10-1a85-46c6-93d8-c422d274439a"
+      ],
+      "arm_15": {
+        "top_5_chunk_ids": [
+          "4bd6803b-da4b-4000-bb84-25117456c326",
+          "79ba4a10-1a85-46c6-93d8-c422d274439a",
+          "b25e46f8-d7e1-4e7a-aa89-8fc227d8008d",
+          "1eb060c8-0374-4e63-b4ad-6366ce160267",
+          "d47453e8-5cd0-491e-baf2-46bfac0d9456"
+        ],
+        "matched_chunk_ids": [
+          "79ba4a10-1a85-46c6-93d8-c422d274439a"
+        ],
+        "matched_count": 1,
+        "first_relevant_rank": 2,
+        "hit_at_1": 0,
+        "hit_at_5": 1,
+        "strict_recall_at_5": 1.0,
+        "reciprocal_rank": 0.5
+      },
+      "arm_10": {
+        "top_5_chunk_ids": [
+          "4bd6803b-da4b-4000-bb84-25117456c326",
+          "79ba4a10-1a85-46c6-93d8-c422d274439a",
+          "b25e46f8-d7e1-4e7a-aa89-8fc227d8008d",
+          "1eb060c8-0374-4e63-b4ad-6366ce160267",
+          "d47453e8-5cd0-491e-baf2-46bfac0d9456"
+        ],
+        "matched_chunk_ids": [
+          "79ba4a10-1a85-46c6-93d8-c422d274439a"
+        ],
+        "matched_count": 1,
+        "first_relevant_rank": 2,
+        "hit_at_1": 0,
+        "hit_at_5": 1,
+        "strict_recall_at_5": 1.0,
+        "reciprocal_rank": 0.5
+      },
+      "ordered_evidence_identical": true
+    },
+    {
+      "query_id": "Q05",
+      "category": "history",
+      "query_text": "Who were the founding brothers of the Vijayanagara Empire at Hampi?",
+      "expected_relevance_set_size": 1,
+      "expected_chunk_ids": [
+        "6f1e5b48-4e4d-4a10-b5cc-8463880392a3"
+      ],
+      "arm_15": {
+        "top_5_chunk_ids": [
+          "6f1e5b48-4e4d-4a10-b5cc-8463880392a3",
+          "4cdc5450-b779-4d45-aca9-421273d6e958",
+          "bc3dbadb-1ae1-4687-8265-d0766c12e521",
+          "4bd6803b-da4b-4000-bb84-25117456c326",
+          "177133ba-59fd-4a52-8791-2347b71a476f"
+        ],
+        "matched_chunk_ids": [
+          "6f1e5b48-4e4d-4a10-b5cc-8463880392a3"
+        ],
+        "matched_count": 1,
+        "first_relevant_rank": 1,
+        "hit_at_1": 1,
+        "hit_at_5": 1,
+        "strict_recall_at_5": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      "arm_10": {
+        "top_5_chunk_ids": [
+          "6f1e5b48-4e4d-4a10-b5cc-8463880392a3",
+          "4cdc5450-b779-4d45-aca9-421273d6e958",
+          "bc3dbadb-1ae1-4687-8265-d0766c12e521",
+          "4bd6803b-da4b-4000-bb84-25117456c326",
+          "177133ba-59fd-4a52-8791-2347b71a476f"
+        ],
+        "matched_chunk_ids": [
+          "6f1e5b48-4e4d-4a10-b5cc-8463880392a3"
+        ],
+        "matched_count": 1,
+        "first_relevant_rank": 1,
+        "hit_at_1": 1,
+        "hit_at_5": 1,
+        "strict_recall_at_5": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      "ordered_evidence_identical": true
+    },
+    {
+      "query_id": "Q06",
+      "category": "history",
+      "query_text": "Aihole inscription Pulakeshin II victory over Emperor Harsha of Kannauj",
+      "expected_relevance_set_size": 1,
+      "expected_chunk_ids": [
+        "8bd87ee5-d841-4c1b-bbfe-66feba750b39"
+      ],
+      "arm_15": {
+        "top_5_chunk_ids": [
+          "8bd87ee5-d841-4c1b-bbfe-66feba750b39",
+          "b40b9e04-bc95-4789-8059-cac917c1d073",
+          "4bd6803b-da4b-4000-bb84-25117456c326",
+          "ad765431-4499-449e-8292-70a77e9d6b63",
+          "7c9f20a2-a5c9-41a7-9c18-86ad580b3aeb"
+        ],
+        "matched_chunk_ids": [
+          "8bd87ee5-d841-4c1b-bbfe-66feba750b39"
+        ],
+        "matched_count": 1,
+        "first_relevant_rank": 1,
+        "hit_at_1": 1,
+        "hit_at_5": 1,
+        "strict_recall_at_5": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      "arm_10": {
+        "top_5_chunk_ids": [
+          "8bd87ee5-d841-4c1b-bbfe-66feba750b39",
+          "b40b9e04-bc95-4789-8059-cac917c1d073",
+          "4bd6803b-da4b-4000-bb84-25117456c326",
+          "ad765431-4499-449e-8292-70a77e9d6b63",
+          "7c9f20a2-a5c9-41a7-9c18-86ad580b3aeb"
+        ],
+        "matched_chunk_ids": [
+          "8bd87ee5-d841-4c1b-bbfe-66feba750b39"
+        ],
+        "matched_count": 1,
+        "first_relevant_rank": 1,
+        "hit_at_1": 1,
+        "hit_at_5": 1,
+        "strict_recall_at_5": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      "ordered_evidence_identical": true
+    },
+    {
+      "query_id": "Q07",
+      "category": "architecture",
+      "query_text": "What is the unique architectural floor plan of Durga Temple at Aihole?",
+      "expected_relevance_set_size": 1,
+      "expected_chunk_ids": [
+        "7c9f20a2-a5c9-41a7-9c18-86ad580b3aeb"
+      ],
+      "arm_15": {
+        "top_5_chunk_ids": [
+          "7c9f20a2-a5c9-41a7-9c18-86ad580b3aeb",
+          "ad765431-4499-449e-8292-70a77e9d6b63",
+          "8bd87ee5-d841-4c1b-bbfe-66feba750b39",
+          "9562ad24-5749-4156-ad83-62b5d266841e",
+          "1eb060c8-0374-4e63-b4ad-6366ce160267"
+        ],
+        "matched_chunk_ids": [
+          "7c9f20a2-a5c9-41a7-9c18-86ad580b3aeb"
+        ],
+        "matched_count": 1,
+        "first_relevant_rank": 1,
+        "hit_at_1": 1,
+        "hit_at_5": 1,
+        "strict_recall_at_5": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      "arm_10": {
+        "top_5_chunk_ids": [
+          "7c9f20a2-a5c9-41a7-9c18-86ad580b3aeb",
+          "ad765431-4499-449e-8292-70a77e9d6b63",
+          "8bd87ee5-d841-4c1b-bbfe-66feba750b39",
+          "9562ad24-5749-4156-ad83-62b5d266841e",
+          "1eb060c8-0374-4e63-b4ad-6366ce160267"
+        ],
+        "matched_chunk_ids": [
+          "7c9f20a2-a5c9-41a7-9c18-86ad580b3aeb"
+        ],
+        "matched_count": 1,
+        "first_relevant_rank": 1,
+        "hit_at_1": 1,
+        "hit_at_5": 1,
+        "strict_recall_at_5": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      "ordered_evidence_identical": true
+    },
+    {
+      "query_id": "Q08",
+      "category": "architecture",
+      "query_text": "Harmonious confluence of Nagara and Dravida architectural styles at Pattadakal",
+      "expected_relevance_set_size": 2,
+      "expected_chunk_ids": [
+        "1eb060c8-0374-4e63-b4ad-6366ce160267",
+        "fbb77ce6-1fa9-4818-b1c5-bd7f8ee0bc5c"
+      ],
+      "arm_15": {
+        "top_5_chunk_ids": [
+          "1eb060c8-0374-4e63-b4ad-6366ce160267",
+          "b40b9e04-bc95-4789-8059-cac917c1d073",
+          "177133ba-59fd-4a52-8791-2347b71a476f",
+          "fbb77ce6-1fa9-4818-b1c5-bd7f8ee0bc5c",
+          "155e4935-d729-4681-9fb4-802bebf51a0b"
+        ],
+        "matched_chunk_ids": [
+          "1eb060c8-0374-4e63-b4ad-6366ce160267",
+          "fbb77ce6-1fa9-4818-b1c5-bd7f8ee0bc5c"
+        ],
+        "matched_count": 2,
+        "first_relevant_rank": 1,
+        "hit_at_1": 1,
+        "hit_at_5": 1,
+        "strict_recall_at_5": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      "arm_10": {
+        "top_5_chunk_ids": [
+          "1eb060c8-0374-4e63-b4ad-6366ce160267",
+          "b40b9e04-bc95-4789-8059-cac917c1d073",
+          "177133ba-59fd-4a52-8791-2347b71a476f",
+          "fbb77ce6-1fa9-4818-b1c5-bd7f8ee0bc5c",
+          "155e4935-d729-4681-9fb4-802bebf51a0b"
+        ],
+        "matched_chunk_ids": [
+          "1eb060c8-0374-4e63-b4ad-6366ce160267",
+          "fbb77ce6-1fa9-4818-b1c5-bd7f8ee0bc5c"
+        ],
+        "matched_count": 2,
+        "first_relevant_rank": 1,
+        "hit_at_1": 1,
+        "hit_at_5": 1,
+        "strict_recall_at_5": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      "ordered_evidence_identical": true
+    },
+    {
+      "query_id": "Q09",
+      "category": "sculpture",
+      "query_text": "18-armed dancing Nataraja with 81 distinct poses at Badami Cave 1",
+      "expected_relevance_set_size": 1,
+      "expected_chunk_ids": [
+        "b25e46f8-d7e1-4e7a-aa89-8fc227d8008d"
+      ],
+      "arm_15": {
+        "top_5_chunk_ids": [
+          "b25e46f8-d7e1-4e7a-aa89-8fc227d8008d",
+          "8bd87ee5-d841-4c1b-bbfe-66feba750b39",
+          "35e88269-3850-4e45-b4dd-e19a41dc7d5a",
+          "4bd6803b-da4b-4000-bb84-25117456c326",
+          "79ba4a10-1a85-46c6-93d8-c422d274439a"
+        ],
+        "matched_chunk_ids": [
+          "b25e46f8-d7e1-4e7a-aa89-8fc227d8008d"
+        ],
+        "matched_count": 1,
+        "first_relevant_rank": 1,
+        "hit_at_1": 1,
+        "hit_at_5": 1,
+        "strict_recall_at_5": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      "arm_10": {
+        "top_5_chunk_ids": [
+          "b25e46f8-d7e1-4e7a-aa89-8fc227d8008d",
+          "8bd87ee5-d841-4c1b-bbfe-66feba750b39",
+          "35e88269-3850-4e45-b4dd-e19a41dc7d5a",
+          "4bd6803b-da4b-4000-bb84-25117456c326",
+          "79ba4a10-1a85-46c6-93d8-c422d274439a"
+        ],
+        "matched_chunk_ids": [
+          "b25e46f8-d7e1-4e7a-aa89-8fc227d8008d"
+        ],
+        "matched_count": 1,
+        "first_relevant_rank": 1,
+        "hit_at_1": 1,
+        "hit_at_5": 1,
+        "strict_recall_at_5": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      "ordered_evidence_identical": true
+    },
+    {
+      "query_id": "Q10",
+      "category": "sculpture",
+      "query_text": "Famous Darpana Sundari bracket figure admiring mirror at Belur",
+      "expected_relevance_set_size": 1,
+      "expected_chunk_ids": [
+        "b3cac416-85ef-407f-800e-6ae10d6fbc0a"
+      ],
+      "arm_15": {
+        "top_5_chunk_ids": [
+          "b3cac416-85ef-407f-800e-6ae10d6fbc0a",
+          "d47453e8-5cd0-491e-baf2-46bfac0d9456",
+          "32908665-c04a-4b70-b3e9-15bc7643cdde",
+          "7c9f20a2-a5c9-41a7-9c18-86ad580b3aeb",
+          "b40b9e04-bc95-4789-8059-cac917c1d073"
+        ],
+        "matched_chunk_ids": [
+          "b3cac416-85ef-407f-800e-6ae10d6fbc0a"
+        ],
+        "matched_count": 1,
+        "first_relevant_rank": 1,
+        "hit_at_1": 1,
+        "hit_at_5": 1,
+        "strict_recall_at_5": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      "arm_10": {
+        "top_5_chunk_ids": [
+          "b3cac416-85ef-407f-800e-6ae10d6fbc0a",
+          "d47453e8-5cd0-491e-baf2-46bfac0d9456",
+          "32908665-c04a-4b70-b3e9-15bc7643cdde",
+          "7c9f20a2-a5c9-41a7-9c18-86ad580b3aeb",
+          "b40b9e04-bc95-4789-8059-cac917c1d073"
+        ],
+        "matched_chunk_ids": [
+          "b3cac416-85ef-407f-800e-6ae10d6fbc0a"
+        ],
+        "matched_count": 1,
+        "first_relevant_rank": 1,
+        "hit_at_1": 1,
+        "hit_at_5": 1,
+        "strict_recall_at_5": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      "ordered_evidence_identical": true
+    },
+    {
+      "query_id": "Q11",
+      "category": "sculpture",
+      "query_text": "Eight tiers of relief friezes with charging war elephants at Halebidu",
+      "expected_relevance_set_size": 1,
+      "expected_chunk_ids": [
+        "23677e76-516d-4cce-972f-b74ac0ff1606"
+      ],
+      "arm_15": {
+        "top_5_chunk_ids": [
+          "23677e76-516d-4cce-972f-b74ac0ff1606",
+          "f65d980c-f74a-4c48-9ca3-b2d54545ebcc",
+          "32908665-c04a-4b70-b3e9-15bc7643cdde",
+          "b40b9e04-bc95-4789-8059-cac917c1d073",
+          "177133ba-59fd-4a52-8791-2347b71a476f"
+        ],
+        "matched_chunk_ids": [
+          "23677e76-516d-4cce-972f-b74ac0ff1606"
+        ],
+        "matched_count": 1,
+        "first_relevant_rank": 1,
+        "hit_at_1": 1,
+        "hit_at_5": 1,
+        "strict_recall_at_5": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      "arm_10": {
+        "top_5_chunk_ids": [
+          "23677e76-516d-4cce-972f-b74ac0ff1606",
+          "f65d980c-f74a-4c48-9ca3-b2d54545ebcc",
+          "32908665-c04a-4b70-b3e9-15bc7643cdde",
+          "b40b9e04-bc95-4789-8059-cac917c1d073",
+          "b25e46f8-d7e1-4e7a-aa89-8fc227d8008d"
+        ],
+        "matched_chunk_ids": [
+          "23677e76-516d-4cce-972f-b74ac0ff1606"
+        ],
+        "matched_count": 1,
+        "first_relevant_rank": 1,
+        "hit_at_1": 1,
+        "hit_at_5": 1,
+        "strict_recall_at_5": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      "ordered_evidence_identical": false
+    },
+    {
+      "query_id": "Q12",
+      "category": "inscriptions",
+      "query_text": "Poet Ravikirti Sanskrit inscription on Meguti hill at Aihole",
+      "expected_relevance_set_size": 1,
+      "expected_chunk_ids": [
+        "8bd87ee5-d841-4c1b-bbfe-66feba750b39"
+      ],
+      "arm_15": {
+        "top_5_chunk_ids": [
+          "8bd87ee5-d841-4c1b-bbfe-66feba750b39",
+          "35e88269-3850-4e45-b4dd-e19a41dc7d5a",
+          "ad765431-4499-449e-8292-70a77e9d6b63",
+          "7c9f20a2-a5c9-41a7-9c18-86ad580b3aeb",
+          "79ba4a10-1a85-46c6-93d8-c422d274439a"
+        ],
+        "matched_chunk_ids": [
+          "8bd87ee5-d841-4c1b-bbfe-66feba750b39"
+        ],
+        "matched_count": 1,
+        "first_relevant_rank": 1,
+        "hit_at_1": 1,
+        "hit_at_5": 1,
+        "strict_recall_at_5": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      "arm_10": {
+        "top_5_chunk_ids": [
+          "8bd87ee5-d841-4c1b-bbfe-66feba750b39",
+          "35e88269-3850-4e45-b4dd-e19a41dc7d5a",
+          "ad765431-4499-449e-8292-70a77e9d6b63",
+          "7c9f20a2-a5c9-41a7-9c18-86ad580b3aeb",
+          "79ba4a10-1a85-46c6-93d8-c422d274439a"
+        ],
+        "matched_chunk_ids": [
+          "8bd87ee5-d841-4c1b-bbfe-66feba750b39"
+        ],
+        "matched_count": 1,
+        "first_relevant_rank": 1,
+        "hit_at_1": 1,
+        "hit_at_5": 1,
+        "strict_recall_at_5": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      "ordered_evidence_identical": true
+    },
+    {
+      "query_id": "Q13",
+      "category": "structural components",
+      "query_text": "Monolithic musical pillars sa-re-ga-ma in Vijaya Vittala temple Ranga Mandapa",
+      "expected_relevance_set_size": 2,
+      "expected_chunk_ids": [
+        "b22c8669-1b07-4e2e-8c38-bd38818443c1",
+        "bc3dbadb-1ae1-4687-8265-d0766c12e521"
+      ],
+      "arm_15": {
+        "top_5_chunk_ids": [
+          "bc3dbadb-1ae1-4687-8265-d0766c12e521",
+          "b22c8669-1b07-4e2e-8c38-bd38818443c1",
+          "b40b9e04-bc95-4789-8059-cac917c1d073",
+          "177133ba-59fd-4a52-8791-2347b71a476f",
+          "b3cac416-85ef-407f-800e-6ae10d6fbc0a"
+        ],
+        "matched_chunk_ids": [
+          "bc3dbadb-1ae1-4687-8265-d0766c12e521",
+          "b22c8669-1b07-4e2e-8c38-bd38818443c1"
+        ],
+        "matched_count": 2,
+        "first_relevant_rank": 1,
+        "hit_at_1": 1,
+        "hit_at_5": 1,
+        "strict_recall_at_5": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      "arm_10": {
+        "top_5_chunk_ids": [
+          "bc3dbadb-1ae1-4687-8265-d0766c12e521",
+          "b22c8669-1b07-4e2e-8c38-bd38818443c1",
+          "b40b9e04-bc95-4789-8059-cac917c1d073",
+          "177133ba-59fd-4a52-8791-2347b71a476f",
+          "b3cac416-85ef-407f-800e-6ae10d6fbc0a"
+        ],
+        "matched_chunk_ids": [
+          "bc3dbadb-1ae1-4687-8265-d0766c12e521",
+          "b22c8669-1b07-4e2e-8c38-bd38818443c1"
+        ],
+        "matched_count": 2,
+        "first_relevant_rank": 1,
+        "hit_at_1": 1,
+        "hit_at_5": 1,
+        "strict_recall_at_5": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      "ordered_evidence_identical": true
+    },
+    {
+      "query_id": "Q14",
+      "category": "structural components",
+      "query_text": "What soft stone material was used for star-shaped Hoysala temple platforms?",
+      "expected_relevance_set_size": 1,
+      "expected_chunk_ids": [
+        "9562ad24-5749-4156-ad83-62b5d266841e"
+      ],
+      "arm_15": {
+        "top_5_chunk_ids": [
+          "9562ad24-5749-4156-ad83-62b5d266841e",
+          "f65d980c-f74a-4c48-9ca3-b2d54545ebcc",
+          "32908665-c04a-4b70-b3e9-15bc7643cdde",
+          "b22c8669-1b07-4e2e-8c38-bd38818443c1",
+          "7c9f20a2-a5c9-41a7-9c18-86ad580b3aeb"
+        ],
+        "matched_chunk_ids": [
+          "9562ad24-5749-4156-ad83-62b5d266841e"
+        ],
+        "matched_count": 1,
+        "first_relevant_rank": 1,
+        "hit_at_1": 1,
+        "hit_at_5": 1,
+        "strict_recall_at_5": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      "arm_10": {
+        "top_5_chunk_ids": [
+          "9562ad24-5749-4156-ad83-62b5d266841e",
+          "32908665-c04a-4b70-b3e9-15bc7643cdde",
+          "b22c8669-1b07-4e2e-8c38-bd38818443c1",
+          "7c9f20a2-a5c9-41a7-9c18-86ad580b3aeb",
+          "35e88269-3850-4e45-b4dd-e19a41dc7d5a"
+        ],
+        "matched_chunk_ids": [
+          "9562ad24-5749-4156-ad83-62b5d266841e"
+        ],
+        "matched_count": 1,
+        "first_relevant_rank": 1,
+        "hit_at_1": 1,
+        "hit_at_5": 1,
+        "strict_recall_at_5": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      "ordered_evidence_identical": false
+    },
+    {
+      "query_id": "Q15",
+      "category": "cultural context",
+      "query_text": "Jain Cave 4 at Badami Mahavira on Simhasana lion throne and Bahubali",
+      "expected_relevance_set_size": 1,
+      "expected_chunk_ids": [
+        "155e4935-d729-4681-9fb4-802bebf51a0b"
+      ],
+      "arm_15": {
+        "top_5_chunk_ids": [
+          "155e4935-d729-4681-9fb4-802bebf51a0b",
+          "b25e46f8-d7e1-4e7a-aa89-8fc227d8008d",
+          "4bd6803b-da4b-4000-bb84-25117456c326",
+          "79ba4a10-1a85-46c6-93d8-c422d274439a",
+          "fbb77ce6-1fa9-4818-b1c5-bd7f8ee0bc5c"
+        ],
+        "matched_chunk_ids": [
+          "155e4935-d729-4681-9fb4-802bebf51a0b"
+        ],
+        "matched_count": 1,
+        "first_relevant_rank": 1,
+        "hit_at_1": 1,
+        "hit_at_5": 1,
+        "strict_recall_at_5": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      "arm_10": {
+        "top_5_chunk_ids": [
+          "155e4935-d729-4681-9fb4-802bebf51a0b",
+          "b25e46f8-d7e1-4e7a-aa89-8fc227d8008d",
+          "4bd6803b-da4b-4000-bb84-25117456c326",
+          "79ba4a10-1a85-46c6-93d8-c422d274439a",
+          "1eb060c8-0374-4e63-b4ad-6366ce160267"
+        ],
+        "matched_chunk_ids": [
+          "155e4935-d729-4681-9fb4-802bebf51a0b"
+        ],
+        "matched_count": 1,
+        "first_relevant_rank": 1,
+        "hit_at_1": 1,
+        "hit_at_5": 1,
+        "strict_recall_at_5": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      "ordered_evidence_identical": false
+    },
+    {
+      "query_id": "Q16",
+      "category": "cultural context",
+      "query_text": "Pattadakal coronation site for Early Chalukya kings on Malaprabha river",
+      "expected_relevance_set_size": 2,
+      "expected_chunk_ids": [
+        "1eb060c8-0374-4e63-b4ad-6366ce160267",
+        "fbb77ce6-1fa9-4818-b1c5-bd7f8ee0bc5c"
+      ],
+      "arm_15": {
+        "top_5_chunk_ids": [
+          "fbb77ce6-1fa9-4818-b1c5-bd7f8ee0bc5c",
+          "1eb060c8-0374-4e63-b4ad-6366ce160267",
+          "4bd6803b-da4b-4000-bb84-25117456c326",
+          "b40b9e04-bc95-4789-8059-cac917c1d073",
+          "ad765431-4499-449e-8292-70a77e9d6b63"
+        ],
+        "matched_chunk_ids": [
+          "fbb77ce6-1fa9-4818-b1c5-bd7f8ee0bc5c",
+          "1eb060c8-0374-4e63-b4ad-6366ce160267"
+        ],
+        "matched_count": 2,
+        "first_relevant_rank": 1,
+        "hit_at_1": 1,
+        "hit_at_5": 1,
+        "strict_recall_at_5": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      "arm_10": {
+        "top_5_chunk_ids": [
+          "fbb77ce6-1fa9-4818-b1c5-bd7f8ee0bc5c",
+          "1eb060c8-0374-4e63-b4ad-6366ce160267",
+          "4bd6803b-da4b-4000-bb84-25117456c326",
+          "b40b9e04-bc95-4789-8059-cac917c1d073",
+          "ad765431-4499-449e-8292-70a77e9d6b63"
+        ],
+        "matched_chunk_ids": [
+          "fbb77ce6-1fa9-4818-b1c5-bd7f8ee0bc5c",
+          "1eb060c8-0374-4e63-b4ad-6366ce160267"
+        ],
+        "matched_count": 2,
+        "first_relevant_rank": 1,
+        "hit_at_1": 1,
+        "hit_at_5": 1,
+        "strict_recall_at_5": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      "ordered_evidence_identical": true
+    },
+    {
+      "query_id": "Q17",
+      "category": "exact keyword queries",
+      "query_text": "monolithic Stone Chariot Garuda shrine Indian 50-rupee currency note",
+      "expected_relevance_set_size": 1,
+      "expected_chunk_ids": [
+        "bc3dbadb-1ae1-4687-8265-d0766c12e521"
+      ],
+      "arm_15": {
+        "top_5_chunk_ids": [
+          "bc3dbadb-1ae1-4687-8265-d0766c12e521",
+          "b22c8669-1b07-4e2e-8c38-bd38818443c1",
+          "b40b9e04-bc95-4789-8059-cac917c1d073",
+          "7c9f20a2-a5c9-41a7-9c18-86ad580b3aeb",
+          "177133ba-59fd-4a52-8791-2347b71a476f"
+        ],
+        "matched_chunk_ids": [
+          "bc3dbadb-1ae1-4687-8265-d0766c12e521"
+        ],
+        "matched_count": 1,
+        "first_relevant_rank": 1,
+        "hit_at_1": 1,
+        "hit_at_5": 1,
+        "strict_recall_at_5": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      "arm_10": {
+        "top_5_chunk_ids": [
+          "bc3dbadb-1ae1-4687-8265-d0766c12e521",
+          "b22c8669-1b07-4e2e-8c38-bd38818443c1",
+          "b40b9e04-bc95-4789-8059-cac917c1d073",
+          "7c9f20a2-a5c9-41a7-9c18-86ad580b3aeb",
+          "177133ba-59fd-4a52-8791-2347b71a476f"
+        ],
+        "matched_chunk_ids": [
+          "bc3dbadb-1ae1-4687-8265-d0766c12e521"
+        ],
+        "matched_count": 1,
+        "first_relevant_rank": 1,
+        "hit_at_1": 1,
+        "hit_at_5": 1,
+        "strict_recall_at_5": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      "ordered_evidence_identical": true
+    },
+    {
+      "query_id": "Q18",
+      "category": "exact keyword queries",
+      "query_text": "Lad Khan temple timber-imitation joinery stone roof slabs floral lattice",
+      "expected_relevance_set_size": 1,
+      "expected_chunk_ids": [
+        "35e88269-3850-4e45-b4dd-e19a41dc7d5a"
+      ],
+      "arm_15": {
+        "top_5_chunk_ids": [
+          "35e88269-3850-4e45-b4dd-e19a41dc7d5a",
+          "9562ad24-5749-4156-ad83-62b5d266841e",
+          "7c9f20a2-a5c9-41a7-9c18-86ad580b3aeb",
+          "b22c8669-1b07-4e2e-8c38-bd38818443c1",
+          "1eb060c8-0374-4e63-b4ad-6366ce160267"
+        ],
+        "matched_chunk_ids": [
+          "35e88269-3850-4e45-b4dd-e19a41dc7d5a"
+        ],
+        "matched_count": 1,
+        "first_relevant_rank": 1,
+        "hit_at_1": 1,
+        "hit_at_5": 1,
+        "strict_recall_at_5": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      "arm_10": {
+        "top_5_chunk_ids": [
+          "35e88269-3850-4e45-b4dd-e19a41dc7d5a",
+          "9562ad24-5749-4156-ad83-62b5d266841e",
+          "7c9f20a2-a5c9-41a7-9c18-86ad580b3aeb",
+          "b22c8669-1b07-4e2e-8c38-bd38818443c1",
+          "bc3dbadb-1ae1-4687-8265-d0766c12e521"
+        ],
+        "matched_chunk_ids": [
+          "35e88269-3850-4e45-b4dd-e19a41dc7d5a"
+        ],
+        "matched_count": 1,
+        "first_relevant_rank": 1,
+        "hit_at_1": 1,
+        "hit_at_5": 1,
+        "strict_recall_at_5": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      "ordered_evidence_identical": false
+    },
+    {
+      "query_id": "Q19",
+      "category": "semantic paraphrases",
+      "query_text": "Where can I see rock-cut shrines situated directly beside a sacred lake?",
+      "expected_relevance_set_size": 2,
+      "expected_chunk_ids": [
+        "4bd6803b-da4b-4000-bb84-25117456c326",
+        "155e4935-d729-4681-9fb4-802bebf51a0b"
+      ],
+      "arm_15": {
+        "top_5_chunk_ids": [
+          "4bd6803b-da4b-4000-bb84-25117456c326",
+          "155e4935-d729-4681-9fb4-802bebf51a0b",
+          "35e88269-3850-4e45-b4dd-e19a41dc7d5a",
+          "ad765431-4499-449e-8292-70a77e9d6b63",
+          "fbb77ce6-1fa9-4818-b1c5-bd7f8ee0bc5c"
+        ],
+        "matched_chunk_ids": [
+          "4bd6803b-da4b-4000-bb84-25117456c326",
+          "155e4935-d729-4681-9fb4-802bebf51a0b"
+        ],
+        "matched_count": 2,
+        "first_relevant_rank": 1,
+        "hit_at_1": 1,
+        "hit_at_5": 1,
+        "strict_recall_at_5": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      "arm_10": {
+        "top_5_chunk_ids": [
+          "4bd6803b-da4b-4000-bb84-25117456c326",
+          "155e4935-d729-4681-9fb4-802bebf51a0b",
+          "35e88269-3850-4e45-b4dd-e19a41dc7d5a",
+          "ad765431-4499-449e-8292-70a77e9d6b63",
+          "fbb77ce6-1fa9-4818-b1c5-bd7f8ee0bc5c"
+        ],
+        "matched_chunk_ids": [
+          "4bd6803b-da4b-4000-bb84-25117456c326",
+          "155e4935-d729-4681-9fb4-802bebf51a0b"
+        ],
+        "matched_count": 2,
+        "first_relevant_rank": 1,
+        "hit_at_1": 1,
+        "hit_at_5": 1,
+        "strict_recall_at_5": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      "ordered_evidence_identical": true
+    },
+    {
+      "query_id": "Q20",
+      "category": "semantic paraphrases",
+      "query_text": "Which medieval queen celebrated victory over Pallavas by building a grand temple?",
+      "expected_relevance_set_size": 1,
+      "expected_chunk_ids": [
+        "b40b9e04-bc95-4789-8059-cac917c1d073"
+      ],
+      "arm_15": {
+        "top_5_chunk_ids": [
+          "b40b9e04-bc95-4789-8059-cac917c1d073",
+          "d47453e8-5cd0-491e-baf2-46bfac0d9456",
+          "f65d980c-f74a-4c48-9ca3-b2d54545ebcc",
+          "b22c8669-1b07-4e2e-8c38-bd38818443c1",
+          "8bd87ee5-d841-4c1b-bbfe-66feba750b39"
+        ],
+        "matched_chunk_ids": [
+          "b40b9e04-bc95-4789-8059-cac917c1d073"
+        ],
+        "matched_count": 1,
+        "first_relevant_rank": 1,
+        "hit_at_1": 1,
+        "hit_at_5": 1,
+        "strict_recall_at_5": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      "arm_10": {
+        "top_5_chunk_ids": [
+          "b40b9e04-bc95-4789-8059-cac917c1d073",
+          "d47453e8-5cd0-491e-baf2-46bfac0d9456",
+          "f65d980c-f74a-4c48-9ca3-b2d54545ebcc",
+          "b22c8669-1b07-4e2e-8c38-bd38818443c1",
+          "8bd87ee5-d841-4c1b-bbfe-66feba750b39"
+        ],
+        "matched_chunk_ids": [
+          "b40b9e04-bc95-4789-8059-cac917c1d073"
+        ],
+        "matched_count": 1,
+        "first_relevant_rank": 1,
+        "hit_at_1": 1,
+        "hit_at_5": 1,
+        "strict_recall_at_5": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      "ordered_evidence_identical": true
+    },
+    {
+      "query_id": "Q21",
+      "category": "spelling variants",
+      "query_text": "Vatapi rock cut caverns Agastya Thirtha Bagalkote",
+      "expected_relevance_set_size": 1,
+      "expected_chunk_ids": [
+        "4bd6803b-da4b-4000-bb84-25117456c326"
+      ],
+      "arm_15": {
+        "top_5_chunk_ids": [
+          "4bd6803b-da4b-4000-bb84-25117456c326",
+          "ad765431-4499-449e-8292-70a77e9d6b63",
+          "155e4935-d729-4681-9fb4-802bebf51a0b",
+          "35e88269-3850-4e45-b4dd-e19a41dc7d5a",
+          "b25e46f8-d7e1-4e7a-aa89-8fc227d8008d"
+        ],
+        "matched_chunk_ids": [
+          "4bd6803b-da4b-4000-bb84-25117456c326"
+        ],
+        "matched_count": 1,
+        "first_relevant_rank": 1,
+        "hit_at_1": 1,
+        "hit_at_5": 1,
+        "strict_recall_at_5": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      "arm_10": {
+        "top_5_chunk_ids": [
+          "4bd6803b-da4b-4000-bb84-25117456c326",
+          "ad765431-4499-449e-8292-70a77e9d6b63",
+          "155e4935-d729-4681-9fb4-802bebf51a0b",
+          "35e88269-3850-4e45-b4dd-e19a41dc7d5a",
+          "b25e46f8-d7e1-4e7a-aa89-8fc227d8008d"
+        ],
+        "matched_chunk_ids": [
+          "4bd6803b-da4b-4000-bb84-25117456c326"
+        ],
+        "matched_count": 1,
+        "first_relevant_rank": 1,
+        "hit_at_1": 1,
+        "hit_at_5": 1,
+        "strict_recall_at_5": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      "ordered_evidence_identical": true
+    },
+    {
+      "query_id": "Q22",
+      "category": "diacritic variants",
+      "query_text": "Sa\u1e45game\u015bvara temple King Vijay\u0101ditya Pattadakallu Dr\u0101vi\u1e0da",
+      "expected_relevance_set_size": 1,
+      "expected_chunk_ids": [
+        "177133ba-59fd-4a52-8791-2347b71a476f"
+      ],
+      "arm_15": {
+        "top_5_chunk_ids": [
+          "177133ba-59fd-4a52-8791-2347b71a476f",
+          "b40b9e04-bc95-4789-8059-cac917c1d073",
+          "1eb060c8-0374-4e63-b4ad-6366ce160267",
+          "fbb77ce6-1fa9-4818-b1c5-bd7f8ee0bc5c",
+          "bc3dbadb-1ae1-4687-8265-d0766c12e521"
+        ],
+        "matched_chunk_ids": [
+          "177133ba-59fd-4a52-8791-2347b71a476f"
+        ],
+        "matched_count": 1,
+        "first_relevant_rank": 1,
+        "hit_at_1": 1,
+        "hit_at_5": 1,
+        "strict_recall_at_5": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      "arm_10": {
+        "top_5_chunk_ids": [
+          "177133ba-59fd-4a52-8791-2347b71a476f",
+          "b40b9e04-bc95-4789-8059-cac917c1d073",
+          "1eb060c8-0374-4e63-b4ad-6366ce160267",
+          "fbb77ce6-1fa9-4818-b1c5-bd7f8ee0bc5c",
+          "bc3dbadb-1ae1-4687-8265-d0766c12e521"
+        ],
+        "matched_chunk_ids": [
+          "177133ba-59fd-4a52-8791-2347b71a476f"
+        ],
+        "matched_count": 1,
+        "first_relevant_rank": 1,
+        "hit_at_1": 1,
+        "hit_at_5": 1,
+        "strict_recall_at_5": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      "ordered_evidence_identical": true
+    },
+    {
+      "query_id": "Q23",
+      "category": "related/confusing entities",
+      "query_text": "Virupaksha temple dedicated to Lord Shiva at Hampi with 50-meter eastern gopuram",
+      "expected_relevance_set_size": 1,
+      "expected_chunk_ids": [
+        "bc3dbadb-1ae1-4687-8265-d0766c12e521"
+      ],
+      "arm_15": {
+        "top_5_chunk_ids": [
+          "bc3dbadb-1ae1-4687-8265-d0766c12e521",
+          "b40b9e04-bc95-4789-8059-cac917c1d073",
+          "b25e46f8-d7e1-4e7a-aa89-8fc227d8008d",
+          "23677e76-516d-4cce-972f-b74ac0ff1606",
+          "177133ba-59fd-4a52-8791-2347b71a476f"
+        ],
+        "matched_chunk_ids": [
+          "bc3dbadb-1ae1-4687-8265-d0766c12e521"
+        ],
+        "matched_count": 1,
+        "first_relevant_rank": 1,
+        "hit_at_1": 1,
+        "hit_at_5": 1,
+        "strict_recall_at_5": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      "arm_10": {
+        "top_5_chunk_ids": [
+          "bc3dbadb-1ae1-4687-8265-d0766c12e521",
+          "b40b9e04-bc95-4789-8059-cac917c1d073",
+          "b25e46f8-d7e1-4e7a-aa89-8fc227d8008d",
+          "23677e76-516d-4cce-972f-b74ac0ff1606",
+          "177133ba-59fd-4a52-8791-2347b71a476f"
+        ],
+        "matched_chunk_ids": [
+          "bc3dbadb-1ae1-4687-8265-d0766c12e521"
+        ],
+        "matched_count": 1,
+        "first_relevant_rank": 1,
+        "hit_at_1": 1,
+        "hit_at_5": 1,
+        "strict_recall_at_5": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      "ordered_evidence_identical": true
+    },
+    {
+      "query_id": "Q24",
+      "category": "related/confusing entities",
+      "query_text": "Mallikarjuna temple at Pattadakal built by Queen Trailokyamahadevi",
+      "expected_relevance_set_size": 2,
+      "expected_chunk_ids": [
+        "177133ba-59fd-4a52-8791-2347b71a476f",
+        "b40b9e04-bc95-4789-8059-cac917c1d073"
+      ],
+      "arm_15": {
+        "top_5_chunk_ids": [
+          "b40b9e04-bc95-4789-8059-cac917c1d073",
+          "1eb060c8-0374-4e63-b4ad-6366ce160267",
+          "fbb77ce6-1fa9-4818-b1c5-bd7f8ee0bc5c",
+          "f65d980c-f74a-4c48-9ca3-b2d54545ebcc",
+          "d47453e8-5cd0-491e-baf2-46bfac0d9456"
+        ],
+        "matched_chunk_ids": [
+          "b40b9e04-bc95-4789-8059-cac917c1d073"
+        ],
+        "matched_count": 1,
+        "first_relevant_rank": 1,
+        "hit_at_1": 1,
+        "hit_at_5": 1,
+        "strict_recall_at_5": 0.5,
+        "reciprocal_rank": 1.0
+      },
+      "arm_10": {
+        "top_5_chunk_ids": [
+          "b40b9e04-bc95-4789-8059-cac917c1d073",
+          "1eb060c8-0374-4e63-b4ad-6366ce160267",
+          "fbb77ce6-1fa9-4818-b1c5-bd7f8ee0bc5c",
+          "f65d980c-f74a-4c48-9ca3-b2d54545ebcc",
+          "d47453e8-5cd0-491e-baf2-46bfac0d9456"
+        ],
+        "matched_chunk_ids": [
+          "b40b9e04-bc95-4789-8059-cac917c1d073"
+        ],
+        "matched_count": 1,
+        "first_relevant_rank": 1,
+        "hit_at_1": 1,
+        "hit_at_5": 1,
+        "strict_recall_at_5": 0.5,
+        "reciprocal_rank": 1.0
+      },
+      "ordered_evidence_identical": true
+    }
+  ]
+}

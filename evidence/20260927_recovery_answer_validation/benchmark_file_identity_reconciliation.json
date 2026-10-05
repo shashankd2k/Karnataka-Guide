@@ -1,0 +1,48 @@
+{
+  "expected_archived_reference_hash": "89846b3e6dbb04abc233faeea527e70ce9dbdedb3fab1fc8e21f3dd49dafa7b6",
+  "erroneously_reported_hash": "6936ee00fe5b0f44bc1fc48943e2e5c8e31846c8b9fe2a188f5d0233e7d58eb6",
+  "actual_measurements": {
+    "archived_zip_reference": {
+      "location": "evidence/reranker_candidate_experiment_evidence.zip:original_artifacts/benchmark_results.json",
+      "byte_size": 521896,
+      "sha256": "89846b3e6dbb04abc233faeea527e70ce9dbdedb3fab1fc8e21f3dd49dafa7b6",
+      "matches_authentic_reference": true
+    },
+    "current_host_original_artifact": {
+      "location": "evidence/20260927_142438_reranker_verification/original_artifacts/benchmark_results.json",
+      "byte_size": 521896,
+      "sha256": "89846b3e6dbb04abc233faeea527e70ce9dbdedb3fab1fc8e21f3dd49dafa7b6",
+      "matches_authentic_reference": true
+    },
+    "current_host_scratch_file": {
+      "location": "scratch/level2_rerank_experiment/benchmark_results.json",
+      "byte_size": 521896,
+      "sha256": "89846b3e6dbb04abc233faeea527e70ce9dbdedb3fab1fc8e21f3dd49dafa7b6",
+      "matches_authentic_reference": true
+    },
+    "container_copy": {
+      "container_path": "/app/scratch/level2_rerank_experiment/benchmark_results.json",
+      "docker_mount_type": "bind mount (host .:/app)",
+      "docker_daemon_status": "STOPPED",
+      "verification_status": "NOT_CHECKED_LIVE_ACCESS_UNAVAILABLE",
+      "last_verified_runtime_status": "Written during task-18991 run_isolated_rerank_experiment.py on 2026-09-27 via container execution",
+      "provenance_note": "Host-file verification and expected mount configuration do not establish a fresh container verification. Live container access is NOT CHECKED because Docker daemon is stopped. Services were not started merely for documentation."
+    }
+  },
+  "byte_level_identity": {
+    "zip_vs_host1_bytes_identical": true,
+    "zip_vs_host2_bytes_identical": true,
+    "host1_vs_host2_bytes_identical": true,
+    "json_parsed_content_identical": true
+  },
+  "reconciliation_verdict": {
+    "status": "RECONCILED_AUTHENTIC_REFERENCE_CONFIRMED",
+    "authentic_sha256": "89846b3e6dbb04abc233faeea527e70ce9dbdedb3fab1fc8e21f3dd49dafa7b6",
+    "findings": [
+      "All existing host and archived copies are 100% bit-for-bit identical with size 521896 bytes and SHA-256 89846b3e6dbb04abc233faeea527e70ce9dbdedb3fab1fc8e21f3dd49dafa7b6.",
+      "Live container access is NOT CHECKED because Docker daemon is stopped; host-file verification and expected bind mount do not constitute a live container check.",
+      "The reported hash 6936ee00fe5b0f44bc1fc48943e2e5c8e31846c8b9fe2a188f5d0233e7d58eb6 does not exist on disk or in any archive; it was an erroneous citation in previous narrative reporting.",
+      "No reference data was replaced or altered to make a hash assertion pass."
+    ]
+  }
+}

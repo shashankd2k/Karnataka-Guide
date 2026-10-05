@@ -1,0 +1,108 @@
+{
+  "metadata": {
+    "evaluation_target": "End-to-End Kannada Query Processing & Retrieval Candidates Comparison",
+    "kannada_test_query": "\u0ca8\u0c95\u0ccd\u0cb7\u0ca4\u0ccd\u0cb0\u0cbe\u0c95\u0cbe\u0cb0\u0ca6 \u0cb9\u0cca\u0caf\u0ccd\u0cb8\u0cb3 \u0ca6\u0cc7\u0cb5\u0cbe\u0cb2\u0caf\u0ca6 \u0c9c\u0c97\u0ca4\u0cbf\u0c97\u0cc6 \u0caf\u0cbe\u0cb5 \u0cae\u0cc3\u0ca6\u0cc1\u0cb5\u0cbe\u0ca6 \u0c95\u0cb2\u0ccd\u0cb2\u0cbf\u0ca8 \u0cb5\u0cb8\u0ccd\u0ca4\u0cc1\u0cb5\u0ca8\u0ccd\u0ca8\u0cc1 \u0cac\u0cb3\u0cb8\u0cb2\u0cbe\u0c97\u0cbf\u0ca4\u0ccd\u0ca4\u0cc1?",
+    "english_equivalent": "What soft stone material was used for star-shaped Hoysala temple platforms? (Q14)",
+    "docker_vm_memory_limit_gib": 3.696,
+    "governance_rule": "Recover the actual status of each attempted Kannada stage and each configuration separately. Distinguish COMPLETED, FAILED, TIMED_OUT, and NOT_RUN. Stop on another timeout and report the blocked stage without repeated diagnostic generation."
+  },
+  "stages_audit": {
+    "arm_15": {
+      "stage_1_nllb_load": {
+        "status": "COMPLETED",
+        "duration_ms": 37401.98,
+        "evidence_source": "task-18991.log: line 83",
+        "details": "facebook/nllb-200-distilled-600M loaded on CPU successfully."
+      },
+      "stage_2_query_translation_kn_to_en": {
+        "status": "COMPLETED",
+        "duration_ms": 146582.75,
+        "evidence_source": "task-18991.log: line 88",
+        "chars_in": 77,
+        "chars_out": 75,
+        "translated_query": "What soft stone material was used for the temple of the star-shaped Hoisal?"
+      },
+      "stage_3_hybrid_retrieval_candidates_15": {
+        "status": "COMPLETED",
+        "duration_ms": 72613.4,
+        "evidence_source": "task-18991.log: lines 98-99",
+        "dense_count": 22,
+        "bm25_count": 22,
+        "fused_count": 15,
+        "final_count": 5,
+        "top_candidate": {
+          "chunk_id": "9562ad24-5749-4156-ad83-62b5d266841e",
+          "document": "Belur_Halebidu_Hoysala_Guide.pdf",
+          "page": 1,
+          "section": "ARCHITECTURAL CHARACTERISTICS",
+          "reranker_score": 4.3989
+        }
+      },
+      "stage_4_english_llm_generation": {
+        "status": "TIMED_OUT",
+        "duration_ms": 300000.0,
+        "evidence_source": "task-18991.log: lines 102-108",
+        "error": "ServiceUnavailableException: Ollama LLM generation timed out after 300.0 seconds (httpcore.ReadTimeout at http://ollama:11434/api/generate).",
+        "contributing_factor": "Memory pressure under Docker Desktop 3.696 GiB RAM limit (concurrent resident NLLB ~2.4 GiB, Cross-Encoder, and Ollama phi3:mini)."
+      },
+      "stage_5_answer_translation_en_to_kn": {
+        "status": "NOT_RUN",
+        "duration_ms": null,
+        "evidence_source": "task-18991.log",
+        "reason": "Blocked by Stage 4 timeout."
+      }
+    },
+    "arm_10": {
+      "stage_1_nllb_load": {
+        "status": "COMPLETED",
+        "duration_ms": 37401.98,
+        "evidence_source": "reused from task-18991.log",
+        "details": "Model snapshot verified and cached."
+      },
+      "stage_2_query_translation_kn_to_en": {
+        "status": "COMPLETED",
+        "duration_ms": 146582.75,
+        "evidence_source": "reused from task-18991.log",
+        "chars_in": 77,
+        "chars_out": 75,
+        "translated_query": "What soft stone material was used for the temple of the star-shaped Hoisal?"
+      },
+      "stage_3_hybrid_retrieval_candidates_10": {
+        "status": "COMPLETED",
+        "duration_ms": 8975.63,
+        "evidence_source": "task-19112.log: lines 9-10",
+        "dense_count": 22,
+        "bm25_count": 22,
+        "fused_count": 10,
+        "final_count": 5,
+        "top_candidate": {
+          "chunk_id": "9562ad24-5749-4156-ad83-62b5d266841e",
+          "document": "Belur_Halebidu_Hoysala_Guide.pdf",
+          "page": 1,
+          "section": "ARCHITECTURAL CHARACTERISTICS",
+          "reranker_score": 4.3989
+        }
+      },
+      "stage_4_english_llm_generation": {
+        "status": "TIMED_OUT",
+        "duration_ms": 300000.0,
+        "evidence_source": "task-19112.log: lines 21-25",
+        "error": "ServiceUnavailableException: Ollama LLM generation timed out after 300.0 seconds (httpcore.ReadTimeout at http://ollama:11434/api/generate).",
+        "contributing_factor": "Memory pressure under Docker Desktop 3.696 GiB RAM limit."
+      },
+      "stage_5_answer_translation_en_to_kn": {
+        "status": "NOT_RUN",
+        "duration_ms": null,
+        "evidence_source": "task-19112.log",
+        "reason": "Blocked by Stage 4 timeout."
+      }
+    }
+  },
+  "out_of_corpus_fallback_classification": {
+    "classification": "GUARD_LANGUAGE_COMPONENT_CHECK",
+    "approved_prd_english_fallback": "Information is not available in the knowledge base.",
+    "approved_prd_kannada_fallback": "\u0c88 \u0cae\u0cbe\u0cb9\u0cbf\u0ca4\u0cbf\u0caf\u0cc1 \u0c9c\u0ccd\u0c9e\u0cbe\u0ca8 \u0cad\u0c82\u0ca1\u0cbe\u0cb0\u0ca6\u0cb2\u0ccd\u0cb2\u0cbf \u0cb2\u0cad\u0ccd\u0caf\u0cb5\u0cbf\u0cb2\u0ccd\u0cb2.",
+    "historical_test_script_note": "The historical test harness in run_focused_answer_validation.py asserted on older verbose strings; production system policy enforces the approved concise PRD strings."
+  },
+  "conclusion": "However, both configurations timed out after 300.0s at the LLM answer generation stage under Docker memory constraints and dual-core CPU contention. Downstream answer translation was NOT RUN. Memory pressure is a documented contributing constraint, but must not be presented as a proven sole cause (system scheduling, CPU contention on 2 physical cores, and Ollama paging also contributed). Per governance instruction, missing stages were attempted once, finite deadlines were enforced, and execution stopped without repeated diagnostic attempts. Kannada answer generation remains BLOCKED/TIMED_OUT WITH DOCUMENTED LIMITATIONS."
+}

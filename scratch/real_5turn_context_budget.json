@@ -1,0 +1,360 @@
+{
+  "final_turn_tokens": {
+    "p50": 738.0,
+    "p90": 747,
+    "p95": 747,
+    "max": 798,
+    "all_measured": [
+      747,
+      739,
+      0,
+      737,
+      736,
+      798
+    ]
+  },
+  "chains": [
+    {
+      "chain_name": "Chain A: English Entity/Coreference Chain (Chennakeshava)",
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Tell me about Chennakeshava Temple.",
+          "resolved_query": "Tell me about Chennakeshava Temple.",
+          "input_tokens": 773,
+          "output_tokens": 32,
+          "components": {}
+        },
+        {
+          "turn": 2,
+          "query": "Who commissioned it?",
+          "resolved_query": "Who commissioned Chennakeshava Temple?",
+          "input_tokens": 773,
+          "output_tokens": 32,
+          "components": {}
+        },
+        {
+          "turn": 3,
+          "query": "When was it built?",
+          "resolved_query": "When was Chennakeshava Temple built?",
+          "input_tokens": 773,
+          "output_tokens": 24,
+          "components": {}
+        },
+        {
+          "turn": 4,
+          "query": "What architectural style does it use?",
+          "resolved_query": "What architectural style does Chennakeshava Temple use?",
+          "input_tokens": 674,
+          "output_tokens": 32,
+          "components": {}
+        },
+        {
+          "turn": 5,
+          "query": "What is special about its sculptures?",
+          "resolved_query": "What is special about its sculptures? (Chennakeshava Temple)",
+          "input_tokens": 747,
+          "output_tokens": 64,
+          "components": {
+            "system_policy_tokens": 0,
+            "evidence_tokens": 433,
+            "query_tokens": 30,
+            "history_resolution": "'What is special about its sculptures?' -> 'What is special about its sculptures? (Chennakeshava Temple)'",
+            "total_input_tokens": 747
+          }
+        }
+      ],
+      "final_turn_input_tokens": 747,
+      "final_turn_components": {
+        "system_policy_tokens": 0,
+        "evidence_tokens": 433,
+        "query_tokens": 30,
+        "history_resolution": "'What is special about its sculptures?' -> 'What is special about its sculptures? (Chennakeshava Temple)'",
+        "total_input_tokens": 747
+      }
+    },
+    {
+      "chain_name": "Chain B: English Detailed Architecture Chain (Halebidu & Hoysala)",
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Tell me about the Hoysaleswara Temple at Halebidu.",
+          "resolved_query": "Tell me about the Hoysaleswara Temple at Halebidu.",
+          "input_tokens": 730,
+          "output_tokens": 32,
+          "components": {}
+        },
+        {
+          "turn": 2,
+          "query": "Why was it left incomplete?",
+          "resolved_query": "Why was Halebidu Hoysaleswara Temple left incomplete?",
+          "input_tokens": 729,
+          "output_tokens": 32,
+          "components": {}
+        },
+        {
+          "turn": 3,
+          "query": "What are the friezes on the lower wall tiers?",
+          "resolved_query": "What are the friezes on the lower wall tiers?",
+          "input_tokens": 864,
+          "output_tokens": 32,
+          "components": {}
+        },
+        {
+          "turn": 4,
+          "query": "Are there Jain basadis nearby in Halebidu?",
+          "resolved_query": "Are there Jain basadis nearby in Halebidu? (Halebidu Hoysaleswara Temple)",
+          "input_tokens": 740,
+          "output_tokens": 10,
+          "components": {}
+        },
+        {
+          "turn": 5,
+          "query": "How far is it from Belur and how can tourists travel between them?",
+          "resolved_query": "How far is Halebidu Hoysaleswara Temple from Belur and how can tourists travel between them?",
+          "input_tokens": 739,
+          "output_tokens": 64,
+          "components": {
+            "system_policy_tokens": 0,
+            "evidence_tokens": 416,
+            "query_tokens": 39,
+            "history_resolution": "'How far is it from Belur and how can tourists travel between them?' -> 'How far is Halebidu Hoysaleswara Temple from Belur and how can tourists travel between them?'",
+            "total_input_tokens": 739
+          }
+        }
+      ],
+      "final_turn_input_tokens": 739,
+      "final_turn_components": {
+        "system_policy_tokens": 0,
+        "evidence_tokens": 416,
+        "query_tokens": 39,
+        "history_resolution": "'How far is it from Belur and how can tourists travel between them?' -> 'How far is Halebidu Hoysaleswara Temple from Belur and how can tourists travel between them?'",
+        "total_input_tokens": 739
+      }
+    },
+    {
+      "chain_name": "Chain C: English Detailed Architecture Chain (Hampi Vijayanagara)",
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Describe the Vijayanagara ruins at Hampi.",
+          "resolved_query": "Describe the Vijayanagara ruins at Hampi.",
+          "input_tokens": 789,
+          "output_tokens": 32,
+          "components": {}
+        },
+        {
+          "turn": 2,
+          "query": "What is unique about the Vittala Temple complex?",
+          "resolved_query": "What is unique about the Vittala Temple complex?",
+          "input_tokens": 749,
+          "output_tokens": 32,
+          "components": {}
+        },
+        {
+          "turn": 3,
+          "query": "Describe the stone chariot inside the temple.",
+          "resolved_query": "Describe the stone chariot inside the temple.",
+          "input_tokens": 798,
+          "output_tokens": 32,
+          "components": {}
+        },
+        {
+          "turn": 4,
+          "query": "Tell me about the musical pillars in the Ranga Mandapa.",
+          "resolved_query": "Tell me about the musical pillars in the Ranga Mandapa.",
+          "input_tokens": 750,
+          "output_tokens": 32,
+          "components": {}
+        },
+        {
+          "turn": 5,
+          "query": "What are the visiting hours and entry fees for the monuments?",
+          "resolved_query": "What are the visiting hours and entry fees for the monuments?",
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "components": {}
+        }
+      ],
+      "final_turn_input_tokens": 0,
+      "final_turn_components": {}
+    },
+    {
+      "chain_name": "Chain D: Kannada Follow-Up Chain (Belur)",
+      "turns": [
+        {
+          "turn": 1,
+          "query": "ಬೇಲೂರಿನ ಚೆನ್ನಕೇಶವ ದೇವಾಲಯವನ್ನು ಯಾರು ನಿರ್ಮಿಸಿದರು?",
+          "resolved_query": "ಬೇಲೂರಿನ ಚೆನ್ನಕೇಶವ ದೇವಾಲಯವನ್ನು ಯಾರು ನಿರ್ಮಿಸಿದರು?",
+          "input_tokens": 777,
+          "output_tokens": 10,
+          "components": {}
+        },
+        {
+          "turn": 2,
+          "query": "ಅದನ್ನು ಯಾವಾಗ ನಿರ್ಮಿಸಲಾಯಿತು?",
+          "resolved_query": "ಅದನ್ನು ಯಾವಾಗ ನಿರ್ಮಿಸಲಾಯಿತು?",
+          "input_tokens": 727,
+          "output_tokens": 29,
+          "components": {}
+        },
+        {
+          "turn": 3,
+          "query": "ಅದರ ವಾಸ್ತುಶಿಲ್ಪ ಶೈಲಿ ಯಾವುದು?",
+          "resolved_query": "ಅದರ ವಾಸ್ತುಶಿಲ್ಪ ಶೈಲಿ ಯಾವುದು? (Aihole Durga Temple)",
+          "input_tokens": 732,
+          "output_tokens": 32,
+          "components": {}
+        },
+        {
+          "turn": 4,
+          "query": "ಅಲ್ಲಿರುವ ಶಿಲಾಬಾಲಿಕೆಯರ ವಿಶೇಷತೆ ಏನು?",
+          "resolved_query": "ಅಲ್ಲಿರುವ ಶಿಲಾಬಾಲಿಕೆಯರ ವಿಶೇಷತೆ ಏನು? (Aihole Durga Temple)",
+          "input_tokens": 736,
+          "output_tokens": 32,
+          "components": {}
+        },
+        {
+          "turn": 5,
+          "query": "ಅಲ್ಲಿಗೆ ಭೇಟಿ ನೀಡಲು ಸೂಕ್ತ ಸಮಯ ಯಾವುದು?",
+          "resolved_query": "ಅಲ್ಲಿಗೆ ಭೇಟಿ ನೀಡಲು ಸೂಕ್ತ ಸಮಯ ಯಾವುದು? (Aihole Durga Temple)",
+          "input_tokens": 737,
+          "output_tokens": 64,
+          "components": {
+            "system_policy_tokens": 0,
+            "evidence_tokens": 424,
+            "query_tokens": 29,
+            "history_resolution": "'ಅಲ್ಲಿಗೆ ಭೇಟಿ ನೀಡಲು ಸೂಕ್ತ ಸಮಯ ಯಾವುದು?' -> 'ಅಲ್ಲಿಗೆ ಭೇಟಿ ನೀಡಲು ಸೂಕ್ತ ಸಮಯ ಯಾವುದು? (Aihole Durga Temple)'",
+            "total_input_tokens": 737
+          }
+        }
+      ],
+      "final_turn_input_tokens": 737,
+      "final_turn_components": {
+        "system_policy_tokens": 0,
+        "evidence_tokens": 424,
+        "query_tokens": 29,
+        "history_resolution": "'ಅಲ್ಲಿಗೆ ಭೇಟಿ ನೀಡಲು ಸೂಕ್ತ ಸಮಯ ಯಾವುದು?' -> 'ಅಲ್ಲಿಗೆ ಭೇಟಿ ನೀಡಲು ಸೂಕ್ತ ಸಮಯ ಯಾವುದು? (Aihole Durga Temple)'",
+        "total_input_tokens": 737
+      }
+    },
+    {
+      "chain_name": "Chain E: Mixed English / Kannada Chain",
+      "turns": [
+        {
+          "turn": 1,
+          "query": "Tell me about Chennakeshava Temple at Belur.",
+          "resolved_query": "Tell me about Chennakeshava Temple at Belur.",
+          "input_tokens": 727,
+          "output_tokens": 32,
+          "components": {}
+        },
+        {
+          "turn": 2,
+          "query": "ಅಲ್ಲಿ ಪ್ರವೇಶ ಶುಲ್ಕ ಎಷ್ಟು?",
+          "resolved_query": "ಅಲ್ಲಿ ಪ್ರವೇಶ ಶುಲ್ಕ ಎಷ್ಟು? (Belur Chennakeshava Temple)",
+          "input_tokens": 729,
+          "output_tokens": 10,
+          "components": {}
+        },
+        {
+          "turn": 3,
+          "query": "Is photography allowed inside?",
+          "resolved_query": "Is photography allowed inside?",
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "components": {}
+        },
+        {
+          "turn": 4,
+          "query": "ಹಳೆಬೀಡು ಇಲ್ಲಿಂದ ಎಷ್ಟು ದೂರ?",
+          "resolved_query": "ಹಳೆಬೀಡು ಇಲ್ಲಿಂದ ಎಷ್ಟು ದೂರ?",
+          "input_tokens": 724,
+          "output_tokens": 10,
+          "components": {}
+        },
+        {
+          "turn": 5,
+          "query": "Can you summarize the best travel itinerary for visiting both Belur and Halebidu?",
+          "resolved_query": "Can you summarize the best travel itinerary for visiting both Belur and Halebidu?",
+          "input_tokens": 736,
+          "output_tokens": 64,
+          "components": {
+            "system_policy_tokens": 0,
+            "evidence_tokens": 416,
+            "query_tokens": 36,
+            "history_resolution": "'Can you summarize the best travel itinerary for visiting both Belur and Halebidu?' -> 'Can you summarize the best travel itinerary for visiting both Belur and Halebidu?'",
+            "total_input_tokens": 736
+          }
+        }
+      ],
+      "final_turn_input_tokens": 736,
+      "final_turn_components": {
+        "system_policy_tokens": 0,
+        "evidence_tokens": 416,
+        "query_tokens": 36,
+        "history_resolution": "'Can you summarize the best travel itinerary for visiting both Belur and Halebidu?' -> 'Can you summarize the best travel itinerary for visiting both Belur and Halebidu?'",
+        "total_input_tokens": 736
+      }
+    },
+    {
+      "chain_name": "Chain F: Badami & Pattadakal Architectural Chain",
+      "turns": [
+        {
+          "turn": 1,
+          "query": "What are the rock-cut cave temples of Badami?",
+          "resolved_query": "What are the rock-cut cave temples of Badami?",
+          "input_tokens": 889,
+          "output_tokens": 32,
+          "components": {}
+        },
+        {
+          "turn": 2,
+          "query": "Describe Cave 3 dedicated to Vishnu.",
+          "resolved_query": "Describe Cave 3 dedicated to Vishnu.",
+          "input_tokens": 785,
+          "output_tokens": 32,
+          "components": {}
+        },
+        {
+          "turn": 3,
+          "query": "What about the Chalukya temples at Pattadakal?",
+          "resolved_query": "What about the Chalukya temples at Pattadakal? (Badami)",
+          "input_tokens": 724,
+          "output_tokens": 32,
+          "components": {}
+        },
+        {
+          "turn": 4,
+          "query": "Explain the difference between southern Dravida and northern Nagara styles there.",
+          "resolved_query": "Explain the difference between southern Dravida and northern Nagara styles there. (Pattadakal)",
+          "input_tokens": 784,
+          "output_tokens": 32,
+          "components": {}
+        },
+        {
+          "turn": 5,
+          "query": "Which is the largest temple in Pattadakal?",
+          "resolved_query": "Which is the largest temple in Pattadakal?",
+          "input_tokens": 798,
+          "output_tokens": 64,
+          "components": {
+            "system_policy_tokens": 0,
+            "evidence_tokens": 488,
+            "query_tokens": 26,
+            "history_resolution": "'Which is the largest temple in Pattadakal?' -> 'Which is the largest temple in Pattadakal?'",
+            "total_input_tokens": 798
+          }
+        }
+      ],
+      "final_turn_input_tokens": 798,
+      "final_turn_components": {
+        "system_policy_tokens": 0,
+        "evidence_tokens": 488,
+        "query_tokens": 26,
+        "history_resolution": "'Which is the largest temple in Pattadakal?' -> 'Which is the largest temple in Pattadakal?'",
+        "total_input_tokens": 798
+      }
+    }
+  ]
+}

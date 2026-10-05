@@ -1,0 +1,123 @@
+services:
+  mysql:
+    image: mysql:8.0
+    restart: unless-stopped
+    command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:?MYSQL_ROOT_PASSWORD is required}
+      MYSQL_DATABASE: ${DB_NAME:-karnataka_guide}
+      MYSQL_USER: ${DB_USER:-karnataka_user}
+      MYSQL_PASSWORD: ${DB_PASSWORD:?DB_PASSWORD is required}
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - karnataka-net
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-p$${MYSQL_ROOT_PASSWORD}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 20s
+
+  ollama:
+    image: ollama/ollama:0.33.3
+    restart: unless-stopped
+    volumes:
+      - ollama_data:/root/.ollama
+    environment:
+      - LLAMA_ARG_CACHE_RAM=0
+      - LLAMA_ARG_CACHE_IDLE_SLOTS=false
+    networks:
+      - karnataka-net
+    healthcheck:
+      test: ["CMD-SHELL", "ollama list > /dev/null 2>&1 || exit 1"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 15s
+
+  ollama-pull:
+    image: ollama/ollama:0.33.3
+    restart: "no"
+    depends_on:
+      ollama:
+        condition: service_healthy
+    environment:
+      - OLLAMA_HOST=ollama:11434
+    entrypoint:
+      - "sh"
+      - "-c"
+      - "ollama show phi3:mini > /dev/null 2>&1 || ollama pull phi3:mini"
+    networks:
+      - karnataka-net
+
+  backend:
+    build:
+      context: .
+      dockerfile: deployment/Dockerfile.backend
+    restart: unless-stopped
+    depends_on:
+      mysql:
+        condition: service_healthy
+      ollama:
+        condition: service_healthy
+      ollama-pull:
+        condition: service_completed_successfully
+    env_file:
+      - .env
+    environment:
+      - DB_HOST=mysql
+      - DB_PORT=3306
+      - DB_USER=${DB_USER:-karnataka_user}
+      - DB_PASSWORD=${DB_PASSWORD:?DB_PASSWORD is required}
+      - OLLAMA_BASE_URL=http://ollama:11434
+      - OLLAMA_NUM_CTX=${OLLAMA_NUM_CTX:-1536}
+      - OLLAMA_NUM_THREAD=${OLLAMA_NUM_THREAD:-2}
+      - HOME=/home/appuser
+      - HF_HOME=/home/appuser/.cache/huggingface
+      - HF_HUB_OFFLINE=${HF_HUB_OFFLINE:-0}
+      - TRANSFORMERS_OFFLINE=${TRANSFORMERS_OFFLINE:-0}
+    volumes:
+      - chroma_data:/app/storage/chroma
+      - pdf_storage:/app/storage/documents
+      - piper_models:/app/storage/models/voices
+      - huggingface_cache:/home/appuser/.cache/huggingface
+    networks:
+      - karnataka-net
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://127.0.0.1:8000/ready"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 30s
+
+  frontend:
+    build:
+      context: .
+      dockerfile: deployment/Dockerfile.frontend
+    restart: unless-stopped
+    ports:
+      - "${PORT:-80}:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+    networks:
+      - karnataka-net
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://127.0.0.1:80/"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+volumes:
+  mysql_data:
+  ollama_data:
+  chroma_data:
+  pdf_storage:
+  piper_models:
+  huggingface_cache:
+
+networks:
+  karnataka-net:
+    driver: bridge

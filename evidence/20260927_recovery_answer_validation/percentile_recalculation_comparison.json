@@ -1,0 +1,212 @@
+{
+  "metadata": {
+    "source_file": "scratch/level2_rerank_experiment/benchmark_results.json",
+    "source_sha256": "89846b3e6dbb04abc233faeea527e70ce9dbdedb3fab1fc8e21f3dd49dafa7b6",
+    "total_paired_observations": 48,
+    "description": "Reproducible percentile evaluation comparing 4 indexing and interpolation methods across Arm 15, Arm 10, and Paired Savings."
+  },
+  "arm_15": {
+    "n": 48,
+    "mean": 1106.4595,
+    "min": 807.019,
+    "max": 2385.498,
+    "stdev": 355.8245,
+    "method_1_harness_int_p_times_n_minus_1": {
+      "formula": "sorted[int(p * (n - 1))]",
+      "p50": {
+        "index": 23,
+        "value_ms": 937.412
+      },
+      "p90": {
+        "index": 42,
+        "value_ms": 1531.085
+      },
+      "p95": {
+        "index": 44,
+        "value_ms": 1602.492
+      }
+    },
+    "method_2_recalc_min_int_n_times_p": {
+      "formula": "sorted[min(int(n * p), n - 1)]",
+      "p50": {
+        "index": 24,
+        "value_ms": 950.882
+      },
+      "p90": {
+        "index": 43,
+        "value_ms": 1579.14
+      },
+      "p95": {
+        "index": 45,
+        "value_ms": 2005.047
+      }
+    },
+    "method_3_standard_nearest_rank_nist": {
+      "formula": "sorted[ceil(p * n) - 1]",
+      "p50": {
+        "index": 23,
+        "value_ms": 937.412
+      },
+      "p90": {
+        "index": 43,
+        "value_ms": 1579.14
+      },
+      "p95": {
+        "index": 45,
+        "value_ms": 2005.047
+      }
+    },
+    "method_4_linear_interpolation_numpy": {
+      "formula": "numpy.percentile(arr, p*100, method='linear')",
+      "p50": 944.147,
+      "p90": 1545.5015,
+      "p95": 1864.1527
+    },
+    "raw_sorted_tail_indices": {
+      "idx_40": 1402.702,
+      "idx_41": 1431.001,
+      "idx_42": 1531.085,
+      "idx_43": 1579.14,
+      "idx_44": 1602.492,
+      "idx_45": 2005.047,
+      "idx_46": 2261.138,
+      "idx_47": 2385.498
+    }
+  },
+  "arm_10": {
+    "n": 48,
+    "mean": 767.9329,
+    "min": 531.831,
+    "max": 1562.467,
+    "stdev": 263.4667,
+    "method_1_harness_int_p_times_n_minus_1": {
+      "formula": "sorted[int(p * (n - 1))]",
+      "p50": {
+        "index": 23,
+        "value_ms": 644.209
+      },
+      "p90": {
+        "index": 42,
+        "value_ms": 1153.027
+      },
+      "p95": {
+        "index": 44,
+        "value_ms": 1360.657
+      }
+    },
+    "method_2_recalc_min_int_n_times_p": {
+      "formula": "sorted[min(int(n * p), n - 1)]",
+      "p50": {
+        "index": 24,
+        "value_ms": 647.317
+      },
+      "p90": {
+        "index": 43,
+        "value_ms": 1215.459
+      },
+      "p95": {
+        "index": 45,
+        "value_ms": 1400.647
+      }
+    },
+    "method_3_standard_nearest_rank_nist": {
+      "formula": "sorted[ceil(p * n) - 1]",
+      "p50": {
+        "index": 23,
+        "value_ms": 644.209
+      },
+      "p90": {
+        "index": 43,
+        "value_ms": 1215.459
+      },
+      "p95": {
+        "index": 45,
+        "value_ms": 1400.647
+      }
+    },
+    "method_4_linear_interpolation_numpy": {
+      "formula": "numpy.percentile(arr, p*100, method='linear')",
+      "p50": 645.763,
+      "p90": 1171.7566,
+      "p95": 1386.6505
+    },
+    "raw_sorted_tail_indices": {
+      "idx_40": 1076.141,
+      "idx_41": 1084.722,
+      "idx_42": 1153.027,
+      "idx_43": 1215.459,
+      "idx_44": 1360.657,
+      "idx_45": 1400.647,
+      "idx_46": 1464.24,
+      "idx_47": 1562.467
+    }
+  },
+  "paired_savings": {
+    "n": 48,
+    "mean": 338.5265,
+    "min": -487.168,
+    "max": 1683.98,
+    "stdev": 362.5996,
+    "method_1_harness_int_p_times_n_minus_1": {
+      "formula": "sorted[int(p * (n - 1))]",
+      "p50": {
+        "index": 23,
+        "value_ms": 288.779
+      },
+      "p90": {
+        "index": 42,
+        "value_ms": 691.818
+      },
+      "p95": {
+        "index": 44,
+        "value_ms": 987.099
+      }
+    },
+    "method_2_recalc_min_int_n_times_p": {
+      "formula": "sorted[min(int(n * p), n - 1)]",
+      "p50": {
+        "index": 24,
+        "value_ms": 296.014
+      },
+      "p90": {
+        "index": 43,
+        "value_ms": 739.368
+      },
+      "p95": {
+        "index": 45,
+        "value_ms": 994.458
+      }
+    },
+    "method_3_standard_nearest_rank_nist": {
+      "formula": "sorted[ceil(p * n) - 1]",
+      "p50": {
+        "index": 23,
+        "value_ms": 288.779
+      },
+      "p90": {
+        "index": 43,
+        "value_ms": 739.368
+      },
+      "p95": {
+        "index": 45,
+        "value_ms": 994.458
+      }
+    },
+    "method_4_linear_interpolation_numpy": {
+      "formula": "numpy.percentile(arr, p*100, method='linear')",
+      "p50": 292.3965,
+      "p90": 706.083,
+      "p95": 991.8823
+    },
+    "raw_sorted_tail_indices": {
+      "idx_40": 605.159,
+      "idx_41": 644.39,
+      "idx_42": 691.818,
+      "idx_43": 739.368,
+      "idx_44": 987.099,
+      "idx_45": 994.458,
+      "idx_46": 1300.776,
+      "idx_47": 1683.98
+    }
+  }
+}

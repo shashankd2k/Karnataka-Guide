@@ -1,0 +1,17 @@
+{
+  "qid": "P08",
+  "status": "PASS",
+  "generated_tokens": 101,
+  "prompt_tokens": 896,
+  "prompt_eval_dur_ms": 131090.889,
+  "pe_tok_s": 6.83,
+  "eval_dur_ms": 51254.072,
+  "gen_tok_s": 1.97,
+  "load_dur_ms": 48.792457,
+  "wall_ms": 183050.59,
+  "sentence_complete": true,
+  "runaway_detected": false,
+  "truncated": false,
+  "sentence_count": 4,
+  "answer": "The exterior of Halebidu features eight horizontal tiers of relief friezes, with the lowest depicting 1,248 charging war elephants, symbolizing strength and royal power. Above them, lions, representing courage and royalty, are shown, followed by cavalry horses, which likely depict the military might of the Hoysala Empire. These friezes narrate the empire's might and divine protection. [1]"
+}

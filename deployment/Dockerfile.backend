@@ -1,0 +1,62 @@
+# ==============================================================================
+# Karnataka Tourist Guide Platform — Backend Dockerfile
+# Python 3.12 Slim (Debian Bookworm) — CPU-only runtime, Non-root execution
+# ==============================================================================
+
+FROM python:3.12-slim-bookworm
+
+# Set strict deterministic environment variables
+ENV PYTHONUNBUFFERED=1 \
+    PYTHONDONTWRITEBYTECODE=1 \
+    HOME=/home/appuser \
+    HF_HOME=/home/appuser/.cache/huggingface \
+    PATH="/home/appuser/.local/bin:$PATH"
+
+# Install essential system runtime libraries (OpenMP, audio codec, curl for healthchecks)
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    curl \
+    libgomp1 \
+    libsndfile1 \
+    && rm -rf /var/lib/apt/lists/*
+
+# Create non-root system user and group (UID/GID 10001)
+RUN groupadd -g 10001 appuser && \
+    useradd -u 10001 -g appuser -m -d /home/appuser -s /bin/bash appuser
+
+WORKDIR /app
+
+# Install CPU-only PyTorch first to prevent accidental multi-GB CUDA dependency installation
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir torch --index-url https://download.pytorch.org/whl/cpu
+
+# Copy and install application requirements with CPU extra index
+COPY backend/requirements.txt /app/requirements.txt
+RUN pip install --no-cache-dir -r /app/requirements.txt --extra-index-url https://download.pytorch.org/whl/cpu
+
+# Copy application code, database migrations, configuration, and deployment scripts
+COPY backend/app /app/app
+COPY backend/alembic /app/alembic
+COPY backend/alembic.ini /app/alembic.ini
+COPY deployment/preflight_models.py /app/deployment/preflight_models.py
+COPY deployment/entrypoint.sh /app/entrypoint.sh
+
+# Create cache and persistent storage directories and assign ownership to appuser
+RUN mkdir -p /home/appuser/.cache/huggingface \
+    /app/storage/documents \
+    /app/storage/chroma \
+    /app/storage/models/voices \
+    /app/storage/temp_audio \
+    /app/deployment && \
+    chown -R appuser:appuser /home/appuser /app && \
+    chmod +x /app/entrypoint.sh /app/deployment/preflight_models.py
+
+# Switch to non-root runtime user
+USER appuser
+
+EXPOSE 8000
+
+# Healthcheck probe using backend readiness endpoint (/ready)
+HEALTHCHECK --interval=15s --timeout=5s --start-period=30s --retries=3 \
+    CMD curl -f http://127.0.0.1:8000/ready || exit 1
+
+ENTRYPOINT ["/app/entrypoint.sh"]

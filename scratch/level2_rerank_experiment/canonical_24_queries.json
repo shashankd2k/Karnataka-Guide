@@ -1,0 +1,224 @@
+[
+  {
+    "id": "Q01",
+    "category": "founder/patron",
+    "query": "Who commissioned the Belur Chennakeshava temple and why?",
+    "expected_chunks": [
+      "8d583c25-2413-48c7-997d-8de0153f0cd3",
+      "e7d436d1-6513-45eb-a205-d3da802e21b4"
+    ],
+    "expected_desc": "King Vishnuvardhana, Battle of Talakadu (Belur_Halebidu_Hoysala_Guide.pdf, p.2)"
+  },
+  {
+    "id": "Q02",
+    "category": "founder/patron",
+    "query": "Which queen built the Virupaksha temple at Pattadakal?",
+    "expected_chunks": [
+      "aff8d390-d5a4-4361-bec5-4ae6246585fd"
+    ],
+    "expected_desc": "Queen Lokamahadevi, victory over Pallavas of Kanchipuram (Pattadakal_UNESCO_Guide.pdf, p.2)"
+  },
+  {
+    "id": "Q03",
+    "category": "construction date",
+    "query": "What year was the Belur Chennakeshava temple commissioned?",
+    "expected_chunks": [
+      "8d583c25-2413-48c7-997d-8de0153f0cd3"
+    ],
+    "expected_desc": "1117 CE (Belur_Halebidu_Hoysala_Guide.pdf, p.2)"
+  },
+  {
+    "id": "Q04",
+    "category": "construction date",
+    "query": "When was Badami Cave 3 carved and which king commissioned it?",
+    "expected_chunks": [
+      "beeeec65-5f80-46d5-837a-b913bc2ba236"
+    ],
+    "expected_desc": "578 CE / Saka 500 by King Mangalesha (Badami_Caves_Guide.pdf, p.2)"
+  },
+  {
+    "id": "Q05",
+    "category": "history",
+    "query": "Who were the founding brothers of the Vijayanagara Empire at Hampi?",
+    "expected_chunks": [
+      "149f3694-3af4-4ca4-ab3f-f0284c2c85ab"
+    ],
+    "expected_desc": "Harihara I and Bukka Raya I in 1336 CE (Hampi_Vijayanagara_Guide.pdf, p.1)"
+  },
+  {
+    "id": "Q06",
+    "category": "history",
+    "query": "Aihole inscription Pulakeshin II victory over Emperor Harsha of Kannauj",
+    "expected_chunks": [
+      "d9d9b05e-6184-4f37-a14f-a73c3d2d2807"
+    ],
+    "expected_desc": "634 CE Meguti Hill inscription by poet Ravikirti, Narmada battle (Aihole_Heritage_Guide.pdf, p.2)"
+  },
+  {
+    "id": "Q07",
+    "category": "architecture",
+    "query": "What is the unique architectural floor plan of Durga Temple at Aihole?",
+    "expected_chunks": [
+      "41dfbf1e-a2ed-456c-9283-99bd749201ae"
+    ],
+    "expected_desc": "Apsidal / gajaprishta horseshoe plan (Aihole_Heritage_Guide.pdf, p.1)"
+  },
+  {
+    "id": "Q08",
+    "category": "architecture",
+    "query": "Harmonious confluence of Nagara and Dravida architectural styles at Pattadakal",
+    "expected_chunks": [
+      "9b83c145-367e-4917-bc6b-6fd3e0230dbb",
+      "d2c053c3-7777-4371-ad12-7fac1771581c"
+    ],
+    "expected_desc": "Blend of northern Nagara and southern Dravida styles (Pattadakal_UNESCO_Guide.pdf, p.1)"
+  },
+  {
+    "id": "Q09",
+    "category": "sculpture",
+    "query": "18-armed dancing Nataraja with 81 distinct poses at Badami Cave 1",
+    "expected_chunks": [
+      "0f3e33e1-c416-432e-9145-eea73222c222"
+    ],
+    "expected_desc": "Cave 1 dancing Nataraja 81 mudras (Badami_Caves_Guide.pdf, p.2)"
+  },
+  {
+    "id": "Q10",
+    "category": "sculpture",
+    "query": "Famous Darpana Sundari bracket figure admiring mirror at Belur",
+    "expected_chunks": [
+      "e7d436d1-6513-45eb-a205-d3da802e21b4"
+    ],
+    "expected_desc": "42 Madanika bracket figures, Darpana Sundari (Belur_Halebidu_Hoysala_Guide.pdf, p.2)"
+  },
+  {
+    "id": "Q11",
+    "category": "sculpture",
+    "query": "Eight tiers of relief friezes with charging war elephants at Halebidu",
+    "expected_chunks": [
+      "4325e2b0-35dd-4c0c-bf0f-be4b72cc9201"
+    ],
+    "expected_desc": "1,248 charging war elephants on base tiers (Belur_Halebidu_Hoysala_Guide.pdf, p.3)"
+  },
+  {
+    "id": "Q12",
+    "category": "inscriptions",
+    "query": "Poet Ravikirti Sanskrit inscription on Meguti hill at Aihole",
+    "expected_chunks": [
+      "d9d9b05e-6184-4f37-a14f-a73c3d2d2807"
+    ],
+    "expected_desc": "634 CE Meguti Jain temple Sanskrit inscription (Aihole_Heritage_Guide.pdf, p.2)"
+  },
+  {
+    "id": "Q13",
+    "category": "structural components",
+    "query": "Monolithic musical pillars sa-re-ga-ma in Vijaya Vittala temple Ranga Mandapa",
+    "expected_chunks": [
+      "c52e4f68-b957-42e5-a04b-bd65acb7e475",
+      "bc0e1d21-5688-44bd-9fa6-3a2f65828601"
+    ],
+    "expected_desc": "56 musical pillars in Ranga Mandapa (Hampi_Vijayanagara_Guide.pdf, p.2)"
+  },
+  {
+    "id": "Q14",
+    "category": "structural components",
+    "query": "What soft stone material was used for star-shaped Hoysala temple platforms?",
+    "expected_chunks": [
+      "5aa05424-f78b-4ede-b8bb-29b6f6e427bb"
+    ],
+    "expected_desc": "Chloritic schist soapstone on star-shaped jagati (Belur_Halebidu_Hoysala_Guide.pdf, p.1)"
+  },
+  {
+    "id": "Q15",
+    "category": "cultural context",
+    "query": "Jain Cave 4 at Badami Mahavira on Simhasana lion throne and Bahubali",
+    "expected_chunks": [
+      "511f03b9-f238-4353-9112-82014de82298"
+    ],
+    "expected_desc": "Lord Mahavira on lion throne, Bahubali kayotsarga (Badami_Caves_Guide.pdf, p.3)"
+  },
+  {
+    "id": "Q16",
+    "category": "cultural context",
+    "query": "Pattadakal coronation site for Early Chalukya kings on Malaprabha river",
+    "expected_chunks": [
+      "d2c053c3-7777-4371-ad12-7fac1771581c",
+      "9b83c145-367e-4917-bc6b-6fd3e0230dbb"
+    ],
+    "expected_desc": "Pattadakallu coronation site on west bank of Malaprabha (Pattadakal_UNESCO_Guide.pdf, p.1)"
+  },
+  {
+    "id": "Q17",
+    "category": "exact keyword queries",
+    "query": "monolithic Stone Chariot Garuda shrine Indian 50-rupee currency note",
+    "expected_chunks": [
+      "c52e4f68-b957-42e5-a04b-bd65acb7e475"
+    ],
+    "expected_desc": "Stone Chariot at Vijaya Vittala temple (Hampi_Vijayanagara_Guide.pdf, p.2)"
+  },
+  {
+    "id": "Q18",
+    "category": "exact keyword queries",
+    "query": "Lad Khan temple timber-imitation joinery stone roof slabs floral lattice",
+    "expected_chunks": [
+      "92b35baa-62d9-47fb-88a7-297e3a2aa93c"
+    ],
+    "expected_desc": "Lad Khan assembly hall and Shiva shrine (Aihole_Heritage_Guide.pdf, p.2)"
+  },
+  {
+    "id": "Q19",
+    "category": "semantic paraphrases",
+    "query": "Where can I see rock-cut shrines situated directly beside a sacred lake?",
+    "expected_chunks": [
+      "511f03b9-f238-4353-9112-82014de82298",
+      "812a2c73-3120-48c5-b85f-319cf1e7dcb6"
+    ],
+    "expected_desc": "Bhutanatha temple extending into Agastya Lake (Badami_Caves_Guide.pdf, p.3)"
+  },
+  {
+    "id": "Q20",
+    "category": "semantic paraphrases",
+    "query": "Which medieval queen celebrated victory over Pallavas by building a grand temple?",
+    "expected_chunks": [
+      "aff8d390-d5a4-4361-bec5-4ae6246585fd"
+    ],
+    "expected_desc": "Queen Lokamahadevi, Virupaksha temple (Pattadakal_UNESCO_Guide.pdf, p.2)"
+  },
+  {
+    "id": "Q21",
+    "category": "spelling variants",
+    "query": "Vatapi rock cut caverns Agastya Thirtha Bagalkote",
+    "expected_chunks": [
+      "812a2c73-3120-48c5-b85f-319cf1e7dcb6"
+    ],
+    "expected_desc": "Vatapi capital of Chalukyas, Agastya Tirtha (Badami_Caves_Guide.pdf, p.1)"
+  },
+  {
+    "id": "Q22",
+    "category": "diacritic variants",
+    "query": "Sa\u1e45game\u015bvara temple King Vijay\u0101ditya Pattadakallu Dr\u0101vi\u1e0da",
+    "expected_chunks": [
+      "0ffa2732-da98-43cd-aa18-8bc19e29e942"
+    ],
+    "expected_desc": "Sangameshwara temple by King Vijayaditya 696-733 CE (Pattadakal_UNESCO_Guide.pdf, p.2)"
+  },
+  {
+    "id": "Q23",
+    "category": "related/confusing entities",
+    "query": "Virupaksha temple dedicated to Lord Shiva at Hampi with 50-meter eastern gopuram",
+    "expected_chunks": [
+      "c52e4f68-b957-42e5-a04b-bd65acb7e475"
+    ],
+    "expected_desc": "Virupaksha Temple at Hampi (Hampi_Vijayanagara_Guide.pdf, p.2)"
+  },
+  {
+    "id": "Q24",
+    "category": "related/confusing entities",
+    "query": "Mallikarjuna temple at Pattadakal built by Queen Trailokyamahadevi",
+    "expected_chunks": [
+      "aff8d390-d5a4-4361-bec5-4ae6246585fd",
+      "0ffa2732-da98-43cd-aa18-8bc19e29e942"
+    ],
+    "expected_desc": "Mallikarjuna temple by Trailokyamahadevi (Pattadakal_UNESCO_Guide.pdf, p.2)"
+  }
+]

@@ -1,0 +1,148 @@
+import { Destination } from '../types/tourist';
+
+export const DESTINATIONS: Destination[] = [
+  {
+    slug: 'belur',
+    name: 'Belur',
+    kannadaName: 'ಬೇಲೂರು',
+    district: 'Hassan',
+    dynasty: 'Hoysala Dynasty',
+    century: '1117 CE',
+    shortDescription: 'Renowned for the Chennakeshava Temple commissioned by King Vishnuvardhana, featuring intricate soapstone carvings and 42 Madanika bracket figures.',
+    kannadaDescription: 'ರಾಜ ವಿಷ್ಣುವರ್ಧನರಿಂದ 1117 ರಲ್ಲಿ ನಿರ್ಮಿಸಲ್ಪಟ್ಟ ಚೆನ್ನಕೇಶವ ದೇವಾಲಯ, ನಕ್ಷತ್ರಾಕಾರದ ಜಗತಿ ಮತ್ತು 42 ಮದನಿಕಾ ಶಿಲಾಬಾಲಿಕೆಯರಿಗೆ ಪ್ರಸಿದ್ಧವಾಗಿದೆ.',
+    coordinates: [13.1623, 75.8647],
+    category: 'Temple Architecture',
+    tags: ['Hoysala', 'Soapstone', 'UNESCO Tentative', 'Chennakeshava'],
+    imageAsset: '/monuments/belur.svg',
+    suggestedQueries: [
+      {
+        en: 'Who commissioned the Belur Chennakeshava temple and when?',
+        kn: 'ಬೇಲೂರು ಚೆನ್ನಕೇಶವ ದೇವಾಲಯವನ್ನು ಯಾರು ಮತ್ತು ಯಾವಾಗ ನಿರ್ಮಿಸಿದರು?',
+      },
+      {
+        en: 'What are the Madanika bracket figures in Belur?',
+        kn: 'ಬೇಲೂರಿನ ಮದನಿಕಾ ಶಿಲಾಬಾಲಿಕೆಯರ ವಿಶೇಷತೆ ಏನು?',
+      },
+    ],
+  },
+  {
+    slug: 'halebidu',
+    name: 'Halebidu',
+    kannadaName: 'ಹಳೇಬೀಡು',
+    district: 'Hassan',
+    dynasty: 'Hoysala Dynasty',
+    century: '12th Century CE',
+    shortDescription: 'The ancient capital Dwarasamudra, famed for the twin Hoysaleswara and Shantaleswara temples adorned with endless bands of chloritic schist reliefs.',
+    kannadaDescription: 'ಹೊಯ್ಸಳರ ಪ್ರಾಚೀನ ರಾಜಧಾನಿ ದ್ವಾರಸಮುದ್ರ, ಅವಳಿ ಹೊಯ್ಸಳೇಶ್ವರ ಮತ್ತು ಶಾಂತಲೇಶ್ವರ ದೇವಾಲಯಗಳ ಅದ್ಭುತ ಶಿಲ್ಪಕಲೆಗೆ ಹೆಸರುವಾಸಿಯಾಗಿದೆ.',
+    coordinates: [13.2167, 75.9933],
+    category: 'Temple Architecture',
+    tags: ['Hoysala', 'Dwarasamudra', 'Hoysaleswara'],
+    imageAsset: '/monuments/halebidu.svg',
+    suggestedQueries: [
+      {
+        en: 'Tell me about the Hoysaleswara temple in Halebidu.',
+        kn: 'ಹಳೇಬೀಡಿನ ಹೊಯ್ಸಳೇಶ್ವರ ದೇವಾಲಯದ ಇತಿಹಾಸವೇನು?',
+      },
+      {
+        en: 'Why was Halebidu called Dwarasamudra?',
+        kn: 'ಹಳೇಬೀಡನ್ನು ದ್ವಾರಸಮುದ್ರ ಎಂದು ಏಕೆ ಕರೆಯಲಾಗುತ್ತಿತ್ತು?',
+      },
+    ],
+  },
+  {
+    slug: 'hampi',
+    name: 'Hampi',
+    kannadaName: 'ಹಂಪಿ',
+    district: 'Vijayanagara',
+    dynasty: 'Vijayanagara Empire',
+    century: '14th–16th Century CE',
+    shortDescription: 'A UNESCO World Heritage site on the banks of the Tungabhadra, showcasing the monumental Virupaksha Temple, Vittala Stone Chariot, and royal pavilions.',
+    kannadaDescription: 'ತುಂಗಭದ್ರಾ ನದಿಯ ದಂಡೆಯಲ್ಲಿರುವ ಯುನೆಸ್ಕೋ ವಿಶ್ವ ಪರಂಪರೆಯ ತಾಣ, ವಿರೂಪಾಕ್ಷ ದೇವಾಲಯ ಮತ್ತು ವಿಜಯ ವಿಠ್ಠಲ ಕಲ್ಲಿನ ರಥಕ್ಕೆ ವಿಶ್ವವಿಖ್ಯಾತ.',
+    coordinates: [15.3350, 76.4600],
+    category: 'UNESCO Heritage City',
+    tags: ['Vijayanagara', 'UNESCO World Heritage', 'Stone Chariot'],
+    imageAsset: '/monuments/hampi.svg',
+    suggestedQueries: [
+      {
+        en: 'What is the history of the Virupaksha Temple and Vittala Stone Chariot at Hampi?',
+        kn: 'ಹಂಪಿಯ ವಿರೂಪಾಕ್ಷ ದೇವಾಲಯ ಮತ್ತು ಕಲ್ಲಿನ ರಥದ ಇತಿಹಾಸವೇನು?',
+      },
+      {
+        en: 'Which empire ruled Hampi along the Tungabhadra river?',
+        kn: 'ತುಂಗಭದ್ರಾ ತೀರದ ಹಂಪಿಯನ್ನು ಯಾವ ಸಾಮ್ರಾಜ್ಯ ಆಳಿತು?',
+      },
+    ],
+  },
+  {
+    slug: 'badami',
+    name: 'Badami',
+    kannadaName: 'ಬಾದಾಮಿ',
+    district: 'Bagalkot',
+    dynasty: 'Early Chalukya Dynasty',
+    century: '6th–8th Century CE',
+    shortDescription: 'Ancient Vatapi, renowned for its four magnificent rock-cut cave temples carved into dramatic red sandstone cliffs overlooking Agastya Lake.',
+    kannadaDescription: 'ಪ್ರಾಚೀನ ವಾತಾಪಿ, ಅಗಸ್ತ್ಯ ಸರೋವರದ ತೀರದ ಕೆಂಪು ಮರಳುಗಲ್ಲಿನ ಬಂಡೆಗಳಲ್ಲಿ ಕೊರೆಯಲಾದ ನಾಲ್ಕು ಪ್ರಸಿದ್ಧ ಗುಹಾ ದೇವಾಲಯಗಳಿಗೆ ಪ್ರಸಿದ್ಧ.',
+    coordinates: [15.9186, 75.6766],
+    category: 'Rock-Cut Architecture',
+    tags: ['Chalukya', 'Rock-Cut Caves', 'Agastya Lake'],
+    imageAsset: '/monuments/badami.svg',
+    suggestedQueries: [
+      {
+        en: 'Describe the four rock-cut cave temples of Badami.',
+        kn: 'ಬಾದಾಮಿಯ ನಾಲ್ಕು ಗುಹಾ ದೇವಾಲಯಗಳ ವಿವರಣೆ ನೀಡಿ.',
+      },
+      {
+        en: 'What was Badami called during the Chalukya era?',
+        kn: 'ಚಾಲುಕ್ಯರ ಕಾಲದಲ್ಲಿ ಬಾದಾಮಿಯನ್ನು ಏನೆಂದು ಕರೆಯುತ್ತಿದ್ದರು?',
+      },
+    ],
+  },
+  {
+    slug: 'pattadakal',
+    name: 'Pattadakal',
+    kannadaName: 'ಪಟ್ಟದಕಲ್ಲು',
+    district: 'Bagalkot',
+    dynasty: 'Chalukya Dynasty',
+    century: '7th–8th Century CE',
+    shortDescription: 'A UNESCO World Heritage ceremonial sanctuary on the Malaprabha river, illustrating the harmonious synthesis of northern Nagara and southern Dravida architectural styles.',
+    kannadaDescription: 'ಮಲಪ್ರಭಾ ನದಿಯ ದಂಡೆಯಲ್ಲಿರುವ ಯುನೆಸ್ಕೋ ತಾಣ, ಉತ್ತರ ಭಾರತದ ನಾಗರ ಮತ್ತು ದಕ್ಷಿಣದ ದ್ರಾವಿಡ ವಾಸ್ತುಶಿಲ್ಪ ಶೈಲಿಗಳ ಸಂಗಮ ಕ್ಷೇತ್ರ.',
+    coordinates: [15.9489, 75.8160],
+    category: 'UNESCO Heritage Site',
+    tags: ['Chalukya', 'UNESCO World Heritage', 'Nagara-Dravida'],
+    imageAsset: '/monuments/pattadakal.svg',
+    suggestedQueries: [
+      {
+        en: 'Why is Pattadakal considered an architectural synthesis?',
+        kn: 'ಪಟ್ಟದಕಲ್ಲು ನಾಗರ ಮತ್ತು ದ್ರಾವಿಡ ಶೈಲಿಗಳ ಸಂಗಮ ಎಂದು ಏಕೆ ಕರೆಯುತ್ತಾರೆ?',
+      },
+      {
+        en: 'Which king built the Virupaksha Temple at Pattadakal?',
+        kn: 'ಪಟ್ಟದಕಲ್ಲಿನ ವಿರೂಪಾಕ್ಷ ದೇವಾಲಯವನ್ನು ಯಾರು ಕಟ್ಟಿಸಿದರು?',
+      },
+    ],
+  },
+  {
+    slug: 'aihole',
+    name: 'Aihole',
+    kannadaName: 'ಐಹೊಳೆ',
+    district: 'Bagalkot',
+    dynasty: 'Early Chalukya Dynasty',
+    century: '5th–8th Century CE',
+    shortDescription: 'Celebrated as the "Cradle of Indian Temple Architecture," featuring over 120 early stone temples including the apsidal Durga Temple and Lad Khan Temple.',
+    kannadaDescription: 'ಭಾರತೀಯ ದೇವಾಲಯ ವಾಸ್ತುಶಿಲ್ಪದ ತೊಟ್ಟಿಲು ಎಂದು ಪ್ರಸಿದ್ಧವಾದ ಐಹೊಳೆ, ಅಪರೂಪದ ಗಜಪೃಷ್ಠಾಕಾರದ ದುರ್ಗಾ ದೇವಾಲಯ ಮತ್ತು ಲಾಡ್ ಖಾನ್ ದೇವಾಲಯಗಳನ್ನು ಹೊಂದಿದೆ.',
+    coordinates: [16.0210, 75.8820],
+    category: 'Experimental Architecture',
+    tags: ['Chalukya', 'Cradle of Architecture', 'Durga Temple'],
+    imageAsset: '/monuments/aihole.svg',
+    suggestedQueries: [
+      {
+        en: 'Why is Aihole called the Cradle of Indian Temple Architecture?',
+        kn: 'ಐಹೊಳೆಯನ್ನು ಭಾರತೀಯ ದೇವಾಲಯ ವಾಸ್ತುಶಿಲ್ಪದ ತೊಟ್ಟಿಲು ಎಂದು ಏಕೆ ಕರೆಯುತ್ತಾರೆ?',
+      },
+      {
+        en: 'What is special about the Durga Temple at Aihole?',
+        kn: 'ಐಹೊಳೆಯ ದುರ್ಗಾ ದೇವಾಲಯದ ವಾಸ್ತುಶಿಲ್ಪದ ವೈಶಿಷ್ಟ್ಯವೇನು?',
+      },
+    ],
+  },
+];

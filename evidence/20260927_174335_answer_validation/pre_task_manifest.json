@@ -1,0 +1,18 @@
+{
+  "backend/app/core/config.py": {
+    "sha256": "357d6274450ddde14ec746e6e62f53337a62b3f835babab6303ba493e0a080c4",
+    "size": 7361
+  },
+  "docs/BENCHMARKS.md": {
+    "sha256": "db15bccacad86876a16f677e767e897fcbc3190bd86c7ff29508c0d556d0c5c0",
+    "size": 59281
+  },
+  "C:\\Users\\91998\\.gemini\\antigravity-ide\\brain\\31746e1c-9193-4204-a830-f1fae8ffec9f\\walkthrough.md": {
+    "sha256": "f078be77f431aa92411a49a3979331e7834f845c5d6024c31f0702be8c59e5f9",
+    "size": 37271
+  },
+  "evidence/reranker_candidate_experiment_evidence.zip": {
+    "sha256": "41697302fb8e58bd8b4fc03abb58a642dc133d1cfda781a724bc7db0c397f386",
+    "size": 147705
+  }
+}

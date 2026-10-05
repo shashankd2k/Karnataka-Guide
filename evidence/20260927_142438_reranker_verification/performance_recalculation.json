@@ -1,0 +1,108 @@
+{
+  "arm_15_latency_ms": {
+    "count": 48,
+    "mean": 1106.46,
+    "median": 944.15,
+    "min": 807.02,
+    "max": 2385.5,
+    "p90": 1579.14,
+    "p95": 2005.05,
+    "stdev": 355.82
+  },
+  "arm_10_latency_ms": {
+    "count": 48,
+    "mean": 767.93,
+    "median": 645.76,
+    "min": 531.83,
+    "max": 1562.47,
+    "p90": 1215.46,
+    "p95": 1400.65,
+    "stdev": 263.47
+  },
+  "paired_deltas_ms": {
+    "count": 48,
+    "mean": 338.53,
+    "median": 292.4,
+    "min": -487.17,
+    "max": 1683.98,
+    "p90": 739.37,
+    "p95": 994.46,
+    "stdev": 362.6
+  },
+  "difference_between_arm_medians_ms": 298.39,
+  "median_paired_difference_ms": 292.4,
+  "pair_counts": {
+    "total_pairs": 48,
+    "arm10_faster_count": 42,
+    "arm10_faster_pct": 87.5,
+    "arm10_slower_count": 6,
+    "arm10_slower_pct": 12.5,
+    "tied_count": 0
+  },
+  "order_comparison": {
+    "rep1_15_first": {
+      "arm_15": {
+        "count": 24,
+        "mean": 1186.95,
+        "median": 979.74,
+        "min": 846.44,
+        "max": 2385.5,
+        "p90": 2005.05,
+        "p95": 2261.14,
+        "stdev": 447.86
+      },
+      "arm_10": {
+        "count": 24,
+        "mean": 811.16,
+        "median": 651.97,
+        "min": 531.83,
+        "max": 1562.47,
+        "p90": 1360.66,
+        "p95": 1400.65,
+        "stdev": 302.85
+      },
+      "paired_delta": {
+        "count": 24,
+        "mean": 375.79,
+        "median": 297.71,
+        "min": -487.17,
+        "max": 1683.98,
+        "p90": 994.46,
+        "p95": 1300.78,
+        "stdev": 461.65
+      }
+    },
+    "rep2_10_first": {
+      "arm_15": {
+        "count": 24,
+        "mean": 1025.97,
+        "median": 934.78,
+        "min": 807.02,
+        "max": 1602.49,
+        "p90": 1381.72,
+        "p95": 1531.09,
+        "stdev": 211.26
+      },
+      "arm_10": {
+        "count": 24,
+        "mean": 724.71,
+        "median": 633.87,
+        "min": 568.34,
+        "max": 1464.24,
+        "p90": 946.38,
+        "p95": 1153.03,
+        "stdev": 215.01
+      },
+      "paired_delta": {
+        "count": 24,
+        "mean": 301.27,
+        "median": 292.4,
+        "min": -200.32,
+        "max": 987.1,
+        "p90": 605.16,
+        "p95": 691.82,
+        "stdev": 229.48
+      }
+    }
+  }
+}

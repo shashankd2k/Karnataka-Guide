@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "turns": [
+    {
+      "turn": 1,
+      "wall_ms": 289430.55,
+      "load_duration_ms": 246180.3,
+      "prompt_tokens": 54,
+      "prompt_eval_dur_ms": 18736.86,
+      "generated_tokens": 79,
+      "eval_dur_ms": 24053.34,
+      "ps_info": {
+        "name": "phi3:mini",
+        "size": 2850333654,
+        "expires_at": "2026-09-19T18:43:54.067656712Z",
+        "context": null
+      },
+      "response": "The Belur temple, dedicated to Lord Vishnu, is a 12th-century temple complex in "
+    },
+    {
+      "turn": 2,
+      "wall_ms": 20147.57,
+      "load_duration_ms": 23.45,
+      "prompt_tokens": 54,
+      "prompt_eval_dur_ms": 321.36,
+      "generated_tokens": 78,
+      "eval_dur_ms": 19773.99,
+      "ps_info": {
+        "name": "phi3:mini",
+        "size": 2850333654,
+        "expires_at": "2026-09-19T18:44:15.4600204Z",
+        "context": null
+      },
+      "response": "The Belur temple, dedicated to Lord Vishnu, is a 12th-century Hoysala architectu"
+    },
+    {
+      "turn": 3,
+      "wall_ms": 33517.0,
+      "load_duration_ms": 161.78,
+      "prompt_tokens": 54,
+      "prompt_eval_dur_ms": 2613.24,
+      "generated_tokens": 77,
+      "eval_dur_ms": 30313.11,
+      "ps_info": {
+        "name": "phi3:mini",
+        "size": 2850333654,
+        "expires_at": "2026-09-19T18:44:49.889405964Z",
+        "context": null
+      },
+      "response": "The Belur temple, dedicated to Lord Vishnu, is a significant Hindu pilgrimage si"
+    }
+  ],
+  "stable_residency": true
+}

@@ -1,0 +1,17 @@
+{
+  "qid": "P21",
+  "status": "PASS",
+  "generated_tokens": 100,
+  "prompt_tokens": 832,
+  "prompt_eval_dur_ms": 31479.1,
+  "pe_tok_s": 26.43,
+  "eval_dur_ms": 56019.92,
+  "gen_tok_s": 1.79,
+  "load_dur_ms": 38.42,
+  "wall_ms": 87882.66,
+  "sentence_complete": true,
+  "runaway_detected": false,
+  "truncated": false,
+  "sentence_count": 2,
+  "answer": "The Chennakeshava Temple at Belur was commissioned by King Vishnuvardhana in 1117 CE, who had a military triumph over the Chola Viceroy of Talakadu. The Virupaksha Temple at Pattadakal was commissioned by Queen Lokamahadevi in 740 CE to celebrate King Vikramaditya II's victory over the Pallavas of Kanchipuram."
+}

@@ -1,0 +1,17 @@
+{
+  "qid": "P07",
+  "status": "PASS",
+  "generated_tokens": 68,
+  "prompt_tokens": 727,
+  "prompt_eval_dur_ms": 47403.4,
+  "pe_tok_s": 15.34,
+  "eval_dur_ms": 52192.67,
+  "gen_tok_s": 1.3,
+  "load_dur_ms": 23.55,
+  "wall_ms": 99936.52,
+  "sentence_complete": true,
+  "runaway_detected": false,
+  "truncated": false,
+  "sentence_count": 2,
+  "answer": "The Hoysaleswara Temple was left incomplete due to the invasion by the Delhi Sultanate in 1311 CE, as mentioned in the Belur_Halebidu_Hoysala_Guide.pdf, Page 1 | Section: HISTORICAL BACKGROUND."
+}

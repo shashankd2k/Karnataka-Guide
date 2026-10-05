@@ -1,0 +1,58 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Python Environments
+.venv/
+env/
+venv/
+ENV/
+
+# Database Runtime & Storage
+mysql8_data/
+storage/mysql8_data/
+backend/storage/mysql8_data/
+*.sql
+*.sql.gz
+dump_*.sql
+backend/storage/*.sql
+*.ibd
+ibdata*
+ib_logfile*
+auto.cnf
+*.pid
+
+# Storage and Artifacts
+backend/storage/temp_audio/
+backend/storage/chroma/
+backend/storage/models/
+storage/temp_audio/
+storage/chroma/
+storage/models/
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
+
+# Frontend
+frontend/node_modules/
+node_modules/
+frontend/dist/
+dist/
+.vite/
+
+# Environment configurations with credentials
+.env
+backend/.env
+frontend/.env
+*.local
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,81 @@
+{
+  "checkpoint_id": "RECOVERY-CHECKPOINT-20260928-FINAL",
+  "timestamp": "2026-09-28T22:15:00+05:30",
+  "resumed_from": {
+    "checkpoint_description": "Interrupted evidence recovery following scratch/apply_report_corrections.py and BENCHMARKS.md content checks",
+    "active_generation_id": "1a2c6365-1bee-4478-9599-a706ee5c7221",
+    "production_candidates": 15,
+    "phase_status": "Phase 18 NOT FINAL; Level 1 COMPLETE WITH DOCUMENTED LIMITATIONS; Level 2 INCOMPLETE"
+  },
+  "completed_stages": [
+    {
+      "stage": 1,
+      "name": "Interruption Resumption & Backup Preservation",
+      "status": "COMPLETED",
+      "details": "Inspected all recovery files and logs. Created uniquely named backups in evidence/20260927_recovery_answer_validation/backups/ with timestamp 20260928_220200."
+    },
+    {
+      "stage": 2,
+      "name": "Benchmark File Identity Reconciliation",
+      "status": "COMPLETED",
+      "details": "Reconciled authentic SHA-256 (89846b3e6dbb04abc233faeea527e70ce9dbdedb3fab1fc8e21f3dd49dafa7b6). Container copy marked NOT CHECKED (LIVE ACCESS UNAVAILABLE) due to Docker daemon stopped. Explained phantom hash 6936ee... from narrative reporting. Preserved all original files."
+    },
+    {
+      "stage": 3,
+      "name": "Quality Floor & Recall Attribution Corrections",
+      "status": "COMPLETED",
+      "details": "Corrected recall attribution: Q01 & Q24 recover 1 of 2 chunks (Recall@5 = 0.5); other 22 queries, including Q04, have Recall@5 = 1.0; macro Recall@5 = 95.8333% (23/24). Q04 at Rank 2 explains Hit@1 (23/24) and MRR (23.5/24 = 47/48 = 0.9792). Distinguished baseline parity, rounded displays, and acceptance thresholds. Documented 4 percentile methods matching percentile_recalculation_comparison.json."
+    },
+    {
+      "stage": 4,
+      "name": "Answer & Prompt Reporting Audit",
+      "status": "COMPLETED",
+      "details": "Verified max_passages=2 in prompt_builder.py vs max_passages=3 in citation_formatter.py (citation [3] is metadata only). Confirmed Q11 Arm 15 duration 247495.1 ms in task-18991.log:L40 (explained 24749.51 ms transcription error). Q15 Arm 15 marked factual-grounding FAILURE. Q18 marked FAILURE in both configurations. Kannada generation marked BLOCKED/TIMED_OUT; downstream answer translation NOT RUN. Generation variability not causally isolated. Memory pressure documented as contributing constraint, not proven sole cause."
+    },
+    {
+      "stage": 5,
+      "name": "Evidence Package Assembly & Verification",
+      "status": "COMPLETED",
+      "details": "Assembled all task logs, harnesses, preserved erroneous artifacts, discrepancy tables, reconstructed inputs, recovered answers, factual audits, benchmark reconciliations, raw references, percentile comparisons, source snapshots, report snapshots, and SHA-256 manifest. Generated and verified ZIP archive."
+    }
+  ],
+  "pending_stages": [
+    {
+      "stage": 6,
+      "name": "Final Report Generation",
+      "status": "IN_PROGRESS",
+      "details": "Present final report with all verified parameters, archive path, hash, and upload instructions for independent review."
+    }
+  ],
+  "key_artifacts": {
+    "canonical_benchmark_reference": {
+      "path": "scratch/level2_rerank_experiment/benchmark_results.json",
+      "size_bytes": 521896,
+      "sha256": "89846b3e6dbb04abc233faeea527e70ce9dbdedb3fab1fc8e21f3dd49dafa7b6"
+    },
+    "reconstructed_inputs_all24": {
+      "path": "evidence/20260927_recovery_answer_validation/reconstructed_production_inputs_all24.json",
+      "size_bytes": 348180
+    },
+    "discrepancy_table": {
+      "path": "evidence/20260927_recovery_answer_validation/discrepancy_table.md",
+      "size_bytes": 7717
+    },
+    "recovered_answers_audit": {
+      "path": "evidence/20260927_recovery_answer_validation/recovered_answers_and_factual_audit.md",
+      "size_bytes": 9771
+    },
+    "kannada_stage_audit": {
+      "path": "evidence/20260927_recovery_answer_validation/kannada_stage_recovery_audit.md",
+      "size_bytes": 2480
+    },
+    "percentile_comparison": {
+      "path": "evidence/20260927_recovery_answer_validation/percentile_recalculation_comparison.md",
+      "size_bytes": 4724
+    },
+    "benchmark_reconciliation": {
+      "path": "evidence/20260927_recovery_answer_validation/benchmark_file_identity_reconciliation.md",
+      "size_bytes": 3082
+    }
+  }
+}

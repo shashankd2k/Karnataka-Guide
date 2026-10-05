@@ -1,0 +1,3 @@
+"""
+Document management application package.
+"""

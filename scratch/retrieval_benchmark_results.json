@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "total_queries": 5,
+  "hit_at_1_rate": 100.0,
+  "recall_at_5": 100.0,
+  "mrr": 1.0000,
+  "bibliography_leaks": 0,
+  "hallucinations": 0,
+  "timings_ms": {
+    "dense_vector_chromadb_ms": 8883.70,
+    "sparse_keyword_bm25_ms": 36.98,
+    "reciprocal_rank_fusion_ms": 1.64,
+    "cross_encoder_reranking_ms": 2253.14,
+    "total_end_to_end_latency_ms": 11271.22
+  },
+  "locked_thresholds": {
+    "hit_at_1_threshold": ">= 95.83%",
+    "recall_at_5_threshold": "= 100.0%",
+    "mrr_threshold": ">= 0.9792",
+    "bibliography_intrusions": 0,
+    "hallucinations": 0
+  }
+}

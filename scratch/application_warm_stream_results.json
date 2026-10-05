@@ -1,0 +1,66 @@
+{
+  "en_warm_stream": {
+    "language": "en",
+    "query": "Who commissioned the Chennakeshava Temple at Belur and in what year?",
+    "session_uuid": "057e2637-18af-4e45-a600-46ef3814c6ec",
+    "effective_model": "phi3:mini",
+    "effective_options": {
+      "num_ctx": 1536,
+      "num_thread": 2,
+      "num_predict": 192,
+      "keep_alive": "10m"
+    },
+    "resident_model": "phi3:mini",
+    "starting_mem": {
+      "avail_mb": 463.6,
+      "swap_used_mb": 818.3,
+      "swap_total_mb": 1024.0
+    },
+    "timestamp_start": "2026-09-27 05:31:35",
+    "first_token_text": null,
+    "ttft_seconds": null,
+    "ttft_tag": "TIMEOUT_BOUND",
+    "total_latency_seconds": 180.22,
+    "total_latency_tag": "TIMEOUT_BOUND",
+    "tokens_streamed_count": 0,
+    "assembled_answer": "",
+    "citations_count": 0,
+    "citations": [],
+    "done_payload": null,
+    "error": "TIMEOUT_BOUND (> 180s)",
+    "timed_out": true,
+    "status": "TIMEOUT_BOUND"
+  },
+  "kn_warm_stream": {
+    "language": "kn",
+    "query": "ಬೇಲೂರು ಚೆನ್ನಕೇಶವ ದೇವಾಲಯವನ್ನು ಯಾರು ಮತ್ತು ಯಾವ ವರ್ಷದಲ್ಲಿ ನಿರ್ಮಿಸಿದರು?",
+    "session_uuid": "7cae972d-477f-41f8-a047-094e95294729",
+    "effective_model": "phi3:mini",
+    "effective_options": {
+      "num_ctx": 1536,
+      "num_thread": 2,
+      "num_predict": 192,
+      "keep_alive": "10m"
+    },
+    "resident_model": "phi3:mini",
+    "starting_mem": {
+      "avail_mb": 329.2,
+      "swap_used_mb": 839.1,
+      "swap_total_mb": 1024.0
+    },
+    "timestamp_start": "2026-09-27 05:34:39",
+    "first_token_text": null,
+    "ttft_seconds": null,
+    "ttft_tag": "TIMEOUT_BOUND",
+    "total_latency_seconds": 205.398,
+    "total_latency_tag": "TIMEOUT_BOUND",
+    "tokens_streamed_count": 0,
+    "assembled_answer": "",
+    "citations_count": 0,
+    "citations": [],
+    "done_payload": null,
+    "error": "TIMEOUT_BOUND (> 180s)",
+    "timed_out": true,
+    "status": "TIMEOUT_BOUND"
+  }
+}

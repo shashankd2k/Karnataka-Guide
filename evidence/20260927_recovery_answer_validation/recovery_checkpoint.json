@@ -1,0 +1,105 @@
+{
+  "checkpoint_id": "RECOVERY-CHECKPOINT-20260928-PROMPT-REPAIR-RESUMED",
+  "timestamp": "2026-09-28T22:58:00+05:30",
+  "resumed_from": {
+    "checkpoint_description": "Interrupted prompt/citation provenance investigation and focused repair resumption",
+    "active_generation_id": "1a2c6365-1bee-4478-9599-a706ee5c7221",
+    "production_candidates": 15,
+    "phase_status": "Phase 18 NOT FINAL; Level 1 COMPLETE WITH DOCUMENTED LIMITATIONS; Level 2 INCOMPLETE"
+  },
+  "processes": {
+    "pending_processes": [],
+    "live_generation_requests_attempted": 0,
+    "live_generation_requests_budget_total": 8
+  },
+  "backups_recorded": {
+    "directory": "evidence/20260927_recovery_answer_validation/backups/prompt_repair_20260928_225200",
+    "files": {
+      "BENCHMARKS.md": {
+        "size_bytes": 78254,
+        "sha256": "6135683cb9938a94596764e9fa4a870fb43ac254b7ff2ddb98fdcc44a320170d"
+      },
+      "citation_formatter.py": {
+        "size_bytes": 5619,
+        "sha256": "4fe82161ebfdbf288d9ef7146ed05fa300f7db22c9de2d362418185905dbed10"
+      },
+      "kannada_stage_recovery_audit.json": {
+        "size_bytes": 6329,
+        "sha256": "4cc31c6ea781e342b7f3eaccfad4bc7b026e1fa40320def45a0b2f57987fb3c3"
+      },
+      "kannada_stage_recovery_audit.md": {
+        "size_bytes": 2764,
+        "sha256": "fa6bfc2235d6ef706c1b962a756a83e006cf158fa7590184c427135a4f8841d5"
+      },
+      "ollama.py": {
+        "size_bytes": 8983,
+        "sha256": "adc993ca9d66edfe2e4591ff9e17892992ca8f1d7f40b644bc33bdf75fe91c3a"
+      },
+      "prompt_builder.py": {
+        "size_bytes": 6675,
+        "sha256": "8bd6e20132154cc270d253dc0aff5884a1fdb7b802127edf475c2b645d8ce246"
+      },
+      "recovered_answers_and_factual_audit.json": {
+        "size_bytes": 14086,
+        "sha256": "5524ea09a210b0d035eab928c349a2a1258e3ec9b1fdcc09253969cd256c2af8"
+      },
+      "recovered_answers_and_factual_audit.md": {
+        "size_bytes": 9915,
+        "sha256": "01f4d5b3fc8bc2e6a9b96a9c9fc224e8dfc629cedbf4996f87d45cd5796adcc8"
+      },
+      "recovery_checkpoint.json": {
+        "size_bytes": 4432,
+        "sha256": "b612530746a4b3a51e2ee0b09d97101c630741ad12a5a065a7580fb08a95f636"
+      },
+      "recovery_checkpoint.md": {
+        "size_bytes": 1885,
+        "sha256": "85134c126a9bcae545f09d5dac80cb91f6d0bb8d4c235c873c37be3418262f5d"
+      },
+      "walkthrough.md": {
+        "size_bytes": 54576,
+        "sha256": "a9d91e08cd650e440e0f3ac925deecb7e6ea66fb34027fc5fdf33e1394556279"
+      }
+    }
+  },
+  "completed_stages": [
+    {
+      "step": 1,
+      "name": "State Recovery & Safety Backups",
+      "status": "COMPLETED",
+      "details": "Verified no running python processes. Inspected helper scripts. Created uniquely named backups in prompt_repair_20260928_225200 with recorded SHA-256 hashes."
+    },
+    {
+      "step": 2,
+      "name": "Filename & Prompt Provenance Investigation",
+      "status": "COMPLETED",
+      "details": "Traced Document.filename vs Document.original_name. Confirmed production retrieval and chunking use original_name, while replay harnesses incorrectly used storage UUID filename from doc.filename. Resolved system prompt discrepancy: container baked older Rule 7, host has Rules 7 & 8."
+    }
+  ],
+  "unfinished_steps": [
+    {
+      "step": 3,
+      "name": "Focused Repair Implementation",
+      "status": "NEXT_ACTION",
+      "details": "Fix prompt_builder.py authorized_labels character budget append bug; align citation metadata extraction; verify stop handling in ollama.py."
+    },
+    {
+      "step": 4,
+      "name": "Deterministic Offline Testing",
+      "status": "PENDING",
+      "details": "Run offline unit tests for evidence label pruning, duplicate suppression, citation filtering, and fallback strings."
+    },
+    {
+      "step": 5,
+      "name": "Bounded Live Generation Validation",
+      "status": "PENDING",
+      "details": "Execute up to 8 serial live requests targeting Q11/Q14 controls and Q15/Q18 failures; persist to JSONL; enforce 1-timeout circuit breaker."
+    },
+    {
+      "step": 6,
+      "name": "Documentation & Versioned Evidence Packaging",
+      "status": "PENDING",
+      "details": "Update recovery audits and docs; package evidence ZIP with verified manifest and deliver final report."
+    }
+  ],
+  "next_exact_action": "Apply minimal fix to backend/app/application/rag/prompt_builder.py: only authorize citation labels for passages actually included in evidence."
+}

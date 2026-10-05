@@ -1,0 +1,342 @@
+{
+  "en_text_cold": {
+    "status": "PASS",
+    "ttft_ms": 284747.96,
+    "total_latency_ms": 485969.62,
+    "tokens_generated": 31,
+    "tokens_per_second": 0.15,
+    "citations_count": 1,
+    "answer_snippet": "The Chennakeshava Temple at Belur was commissioned in 1117 CE by King Vishnuvardhana [1].",
+    "telemetry": {
+      "wsl_avail_mem_mb": 497.6,
+      "wsl_swap_used_mb": 945.6,
+      "ollama_rss_mb": 2444.0
+    },
+    "session_uuid": "f22650f1-67e2-4e97-b3c7-827cc5967c91"
+  },
+  "en_text_warm_runs": [
+    {
+      "status": "PASS",
+      "ttft_ms": 94725.05,
+      "total_latency_ms": 147907.06,
+      "tokens_generated": 32,
+      "tokens_per_second": 0.6,
+      "citations_count": 1,
+      "answer_snippet": "The Chennakeshava Temple at Belur was commissioned by King Vishnuvardhana in 1117 CE. [1]",
+      "telemetry": {
+        "error": "Command '['docker', 'exec', 'karnatakaguide-backend-1', 'cat', '/proc/meminfo']' timed out after 5 seconds",
+        "wsl_avail_mem_mb": 0.0,
+        "wsl_swap_used_mb": 0.0,
+        "ollama_rss_mb": 0.0
+      },
+      "session_uuid": "268d96f7-758b-40e3-8929-5d252b7a3d89"
+    },
+    {
+      "status": "PASS",
+      "ttft_ms": 106962.19,
+      "total_latency_ms": 344514.48,
+      "tokens_generated": 31,
+      "tokens_per_second": 0.13,
+      "citations_count": 1,
+      "answer_snippet": "The Chennakeshava Temple at Belur was commissioned in 1117 CE by King Vishnuvardhana [1].",
+      "telemetry": {
+        "wsl_avail_mem_mb": 575.1,
+        "wsl_swap_used_mb": 1024.0,
+        "ollama_rss_mb": 2441.3
+      },
+      "session_uuid": "268d96f7-758b-40e3-8929-5d252b7a3d89"
+    },
+    {
+      "status": "PASS",
+      "ttft_ms": 79663.07,
+      "total_latency_ms": 102763.73,
+      "tokens_generated": 32,
+      "tokens_per_second": 1.39,
+      "citations_count": 1,
+      "answer_snippet": "The Chennakeshava Temple at Belur was commissioned by King Vishnuvardhana in 1117 CE. [1]",
+      "telemetry": {
+        "wsl_avail_mem_mb": 597.6,
+        "wsl_swap_used_mb": 1024.0,
+        "ollama_rss_mb": 2441.3
+      },
+      "session_uuid": "268d96f7-758b-40e3-8929-5d252b7a3d89"
+    },
+    {
+      "status": "PASS",
+      "ttft_ms": 53331.87,
+      "total_latency_ms": 67852.71,
+      "tokens_generated": 32,
+      "tokens_per_second": 2.2,
+      "citations_count": 1,
+      "answer_snippet": "The Chennakeshava Temple at Belur was commissioned by King Vishnuvardhana in 1117 CE. [1]",
+      "telemetry": {
+        "wsl_avail_mem_mb": 571.1,
+        "wsl_swap_used_mb": 1024.0,
+        "ollama_rss_mb": 2441.3
+      },
+      "session_uuid": "268d96f7-758b-40e3-8929-5d252b7a3d89"
+    },
+    {
+      "status": "PASS",
+      "ttft_ms": 25299.55,
+      "total_latency_ms": 205630.0,
+      "tokens_generated": 32,
+      "tokens_per_second": 0.18,
+      "citations_count": 1,
+      "answer_snippet": "The Chennakeshava Temple at Belur was commissioned by King Vishnuvardhana in 1117 CE. [1]",
+      "telemetry": {
+        "wsl_avail_mem_mb": 552.3,
+        "wsl_swap_used_mb": 1023.9,
+        "ollama_rss_mb": 2439.9
+      },
+      "session_uuid": "268d96f7-758b-40e3-8929-5d252b7a3d89"
+    }
+  ],
+  "en_text_warm_stats": {
+    "ttft_ms": {
+      "mean": 71996.35,
+      "median": 79663.07,
+      "p90": 102067.33,
+      "p95": 104514.76,
+      "min": 25299.55,
+      "max": 106962.19,
+      "std": 32889.73,
+      "count": 5
+    },
+    "total_latency_ms": {
+      "mean": 173733.6,
+      "median": 147907.06,
+      "p90": 288960.69,
+      "p95": 316737.58,
+      "min": 67852.71,
+      "max": 344514.48,
+      "std": 108510.35,
+      "count": 5
+    },
+    "tokens_per_second": {
+      "mean": 0.9,
+      "median": 0.6,
+      "p90": 1.88,
+      "p95": 2.04,
+      "min": 0.13,
+      "max": 2.2,
+      "std": 0.88,
+      "count": 5
+    }
+  },
+  "kn_text_cold": {
+    "status": "PASS",
+    "ttft_ms": 272435.22,
+    "total_latency_ms": 273703.04,
+    "tokens_generated": 1,
+    "tokens_per_second": 0.79,
+    "citations_count": 0,
+    "answer_snippet": "ಈ ಮಾಹಿತಿಯು ಜ್ಞಾನ ಭಂಡಾರದಲ್ಲಿ ಲಭ್ಯವಿಲ್ಲ.",
+    "telemetry": {
+      "wsl_avail_mem_mb": 404.2,
+      "wsl_swap_used_mb": 1024.0,
+      "ollama_rss_mb": 2457.7
+    },
+    "session_uuid": "0961faaf-161d-4b60-86c9-69b01032718a"
+  },
+  "kn_text_warm_runs": [
+    {
+      "status": "FAIL",
+      "ttft_ms": 0.0,
+      "total_latency_ms": 300350.0,
+      "tokens_generated": 0,
+      "tokens_per_second": 0.0,
+      "citations_count": 0,
+      "answer_snippet": "",
+      "telemetry": {
+        "error": "Command '['docker', 'exec', 'karnatakaguide-backend-1', 'cat', '/proc/meminfo']' timed out after 15 seconds",
+        "wsl_avail_mem_mb": 0.0,
+        "wsl_swap_used_mb": 0.0,
+        "ollama_rss_mb": 0.0
+      },
+      "session_uuid": "9593d71a-74f8-40e6-b078-ff89cbd5f726"
+    },
+    {
+      "status": "FAIL",
+      "ttft_ms": 0.0,
+      "total_latency_ms": 303094.13,
+      "tokens_generated": 0,
+      "tokens_per_second": 0.0,
+      "citations_count": 0,
+      "answer_snippet": "",
+      "telemetry": {
+        "wsl_avail_mem_mb": 394.5,
+        "wsl_swap_used_mb": 1024.0,
+        "ollama_rss_mb": 2454.3
+      },
+      "session_uuid": "9593d71a-74f8-40e6-b078-ff89cbd5f726"
+    },
+    {
+      "status": "FAIL",
+      "ttft_ms": 0.0,
+      "total_latency_ms": 302507.52,
+      "tokens_generated": 0,
+      "tokens_per_second": 0.0,
+      "citations_count": 0,
+      "answer_snippet": "",
+      "telemetry": {
+        "wsl_avail_mem_mb": 394.8,
+        "wsl_swap_used_mb": 1024.0,
+        "ollama_rss_mb": 2455.2
+      },
+      "session_uuid": "9593d71a-74f8-40e6-b078-ff89cbd5f726"
+    },
+    {
+      "status": "FAIL",
+      "ttft_ms": 0.0,
+      "total_latency_ms": 306813.02,
+      "tokens_generated": 0,
+      "tokens_per_second": 0.0,
+      "citations_count": 0,
+      "answer_snippet": "",
+      "telemetry": {
+        "wsl_avail_mem_mb": 414.0,
+        "wsl_swap_used_mb": 1024.0,
+        "ollama_rss_mb": 2487.2
+      },
+      "session_uuid": "9593d71a-74f8-40e6-b078-ff89cbd5f726"
+    },
+    {
+      "status": "FAIL",
+      "ttft_ms": 0.0,
+      "total_latency_ms": 303016.66,
+      "tokens_generated": 0,
+      "tokens_per_second": 0.0,
+      "citations_count": 0,
+      "answer_snippet": "",
+      "telemetry": {
+        "wsl_avail_mem_mb": 407.1,
+        "wsl_swap_used_mb": 1024.0,
+        "ollama_rss_mb": 2455.9
+      },
+      "session_uuid": "9593d71a-74f8-40e6-b078-ff89cbd5f726"
+    }
+  ],
+  "kn_text_warm_stats": {
+    "ttft_ms": {
+      "mean": 0.0,
+      "median": 0.0,
+      "p90": 0.0,
+      "p95": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "std": 0.0,
+      "count": 5
+    },
+    "total_latency_ms": {
+      "mean": 303156.27,
+      "median": 303016.66,
+      "p90": 305325.46,
+      "p95": 306069.24,
+      "min": 300350.0,
+      "max": 306813.02,
+      "std": 2328.69,
+      "count": 5
+    },
+    "tokens_per_second": {
+      "mean": 0.0,
+      "median": 0.0,
+      "p90": 0.0,
+      "p95": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "std": 0.0,
+      "count": 5
+    }
+  },
+  "en_voice_cold": {
+    "status": "TIMEOUT_BOUND",
+    "error": "HTTP Error 504: Gateway Time-out",
+    "chat_voice_turn_ms": 300000.0,
+    "tts_synthesis_ms": 0.0,
+    "server_time_to_audio_available_ms": 300000.0,
+    "note": "Exceeded 300s Gateway Timeout"
+  },
+  "en_voice_warm_runs": [
+    {
+      "status": "TIMEOUT_BOUND",
+      "error": "timed out",
+      "chat_voice_turn_ms": 300000.0,
+      "tts_synthesis_ms": 0.0,
+      "server_time_to_audio_available_ms": 300000.0,
+      "note": "Exceeded 300s Gateway Timeout"
+    },
+    {
+      "status": "TIMEOUT_BOUND",
+      "error": "timed out",
+      "chat_voice_turn_ms": 300000.0,
+      "tts_synthesis_ms": 0.0,
+      "server_time_to_audio_available_ms": 300000.0,
+      "note": "Exceeded 300s Gateway Timeout"
+    },
+    {
+      "status": "PASS",
+      "transcript": "The Chennai-Kshava Temple at Balur was commissioned by King Vishnu Vardhana in 1117 CE.",
+      "answer_snippet": "Information is not available in the knowledge base.",
+      "chat_voice_turn_ms": 190543.42,
+      "tts_synthesis_ms": 19643.19,
+      "server_time_to_audio_available_ms": 210188.91,
+      "audio_bytes_len": 117292,
+      "audio_duration_seconds": 2.66,
+      "telemetry": {
+        "error": "Command '['docker', 'exec', 'karnatakaguide-backend-1', 'cat', '/proc/meminfo']' timed out after 15 seconds",
+        "wsl_avail_mem_mb": 0.0,
+        "wsl_swap_used_mb": 0.0,
+        "ollama_rss_mb": 0.0
+      }
+    }
+  ],
+  "en_voice_warm_stats": {
+    "chat_voice_turn_ms": {
+      "mean": 263514.47,
+      "median": 300000.0,
+      "p90": 300000.0,
+      "p95": 300000.0,
+      "min": 190543.42,
+      "max": 300000.0,
+      "std": 63194.79,
+      "count": 3
+    },
+    "tts_synthesis_ms": {
+      "mean": 6547.73,
+      "median": 0.0,
+      "p90": 15714.55,
+      "p95": 17678.87,
+      "min": 0.0,
+      "max": 19643.19,
+      "std": 11341.0,
+      "count": 3
+    },
+    "server_time_to_audio_available_ms": {
+      "mean": 270062.97,
+      "median": 300000.0,
+      "p90": 300000.0,
+      "p95": 300000.0,
+      "min": 210188.91,
+      "max": 300000.0,
+      "std": 51852.46,
+      "count": 3
+    }
+  },
+  "kn_voice_cold": {
+    "status": "TIMEOUT_BOUND",
+    "error": "timed out",
+    "chat_voice_turn_ms": 300000.0,
+    "tts_synthesis_ms": 0.0,
+    "server_time_to_audio_available_ms": 300000.0,
+    "note": "Exceeded 300s Gateway Timeout"
+  },
+  "kn_voice_warm": {
+    "status": "TIMEOUT_BOUND",
+    "error": "timed out",
+    "chat_voice_turn_ms": 300000.0,
+    "tts_synthesis_ms": 0.0,
+    "server_time_to_audio_available_ms": 300000.0,
+    "note": "Exceeded 300s Gateway Timeout"
+  }
+}

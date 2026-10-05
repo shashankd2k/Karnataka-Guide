@@ -1,0 +1,83 @@
+<USER_REQUEST>
+Continue Karnataka Guide at `D:\Karnataka Guide`.
+
+Finish ONLY the remaining evidence corrections and recovery archive. Use existing saved data and logs. Do not launch further LLM, translation or retrieval benchmarks.
+
+Preserve all existing artifacts and production settings.
+
+1. Reconcile the benchmark file identity.
+
+The SHA-256 of `original_artifacts/benchmark_results.json` inside the previously verified `reranker_candidate_experiment_evidence.zip` is:
+
+`89846b3e6dbb04abc233faeea527e70ce9dbdedb3fab1fc8e21f3dd49dafa7b6`
+
+The latest report instead lists:
+
+`6936ee00fe5b0f44bc1fc48943e2e5c8e31846c8b9fe2a188f5d0233e7d58eb6`
+
+Calculate actual hashes directly. Compare the archived reference, current host file and container copy where available. If bytes differ, compare parsed JSON and explain whether the difference is formatting, metadata or measurement content. Preserve every differing version.
+
+Do not replace reference data to make a hash assertion pass.
+
+2. Correct recall attribution everywhere in the current reports.
+
+The verified dataset shows:
+- Q01: 1 of 2 expected chunks recovered → Recall@5 = 0.5.
+- Q24: 1 of 2 expected chunks recovered → Recall@5 = 0.5.
+- Other 22 queries, including Q04: Recall@5 = 1.0.
+- Macro Recall@5 = (22 + 0.5 + 0.5) / 24 = 95.8333%.
+- Q04’s relevant chunk is at rank 2, explaining the Hit@1 and MRR reduction.
+
+Generate these statements from a per-query calculation. Remove the incorrect claim that Q04 has two expected chunks and causes the recall shortfall.
+
+Correct older contradictory tables in the current walkthrough as well. Preserve historical artifacts and distinguish baseline parity from acceptance thresholds. Do not introduce a new “locked floor” without an established requirement.
+
+3. Recalculate percentiles from the saved 48 observations per configuration.
+
+The original harness used:
+`sorted_values[int(p * (n - 1))]`
+
+The later recalculation used:
+`sorted_values[min(int(n * p), n - 1)]`
+
+These are different index 
+<truncated 1260 bytes>
+fferences do not establish a benefit from candidate reduction; the precise source of generation variability was not isolated.
+
+Record Q15 Arm 15 as a factual-grounding failure, Q18 as a failure in both configurations, and Kannada as blocked. Completing an audit does not mean the application passed its checks.
+
+5. Create the actual review package.
+
+Package the existing recovery materials, including:
+- Original task-18991 and task-19112 logs.
+- Original validation harness and reconstruction/audit scripts.
+- Preserved erroneous summary.
+- Discrepancy table.
+- Reconstructed prompts, labels, citation mappings and source-text hashes.
+- Recovered outputs and separate factual assessments.
+- Reference benchmark, recalculated metrics and file-comparison results.
+- Relevant production source snapshots and corrected reports.
+- SHA-256 manifest.
+
+Use an explicit inventory and exclude credentials or unrelated files. Reopen the completed ZIP and verify every manifest entry.
+
+Return its absolute Windows path, byte size, file count and SHA-256 hash. Make clear that this ZIP must be uploaded to ChatGPT for independent review.
+
+Report separately:
+- Evidence recovery/export status.
+- English answer-quality failures.
+- Kannada blocked coverage.
+- Remaining uncertainties.
+- Production candidate count and active-generation verification status.
+
+Keep production at 15 candidates and preserve generation:
+`1a2c6365-1bee-4478-9599-a706ee5c7221`.
+
+Do not implement candidate reduction, output-budget changes or other optimizations. Phase 18 remains NOT FINAL. Return the complete report and ZIP before the next task.
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-09-28T18:53:05+05:30.
+</ADDITIONAL_METADATA>
+<USER_SETTINGS_CHANGE>
+The user changed setting `Model Selection` from None to Gemini 3.8 Flash (High). No need to comment on this change if the user doesn't ask about it. If reporting what model you are, please use a human readable name instead of the exact string.
+</USER_SETTINGS_CHANGE>

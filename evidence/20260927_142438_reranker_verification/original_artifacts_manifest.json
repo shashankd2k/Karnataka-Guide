@@ -1,0 +1,72 @@
+{
+  "benchmark_results.json": {
+    "original_source": "D:\\Karnataka Guide\\scratch\\level2_rerank_experiment\\benchmark_results.json",
+    "sha256": "89846b3e6dbb04abc233faeea527e70ce9dbdedb3fab1fc8e21f3dd49dafa7b6",
+    "bytes": 521896
+  },
+  "run_isolated_rerank_experiment.py": {
+    "original_source": "D:\\Karnataka Guide\\scratch\\level2_rerank_experiment\\run_isolated_rerank_experiment.py",
+    "sha256": "c054f3575baa6a637d8dcc729576b5092e027d39489caa6ca0e3d9ffa25f7667",
+    "bytes": 28245
+  },
+  "inspect_fixture.py": {
+    "original_source": "D:\\Karnataka Guide\\scratch\\level2_rerank_experiment\\inspect_fixture.py",
+    "sha256": "0ceef55668a7f980240f8d89ea31eb9ee67b4507600a497a06dca33124f99437",
+    "bytes": 1205
+  },
+  "verify_fixture_on_1a2.py": {
+    "original_source": "D:\\Karnataka Guide\\scratch\\level2_rerank_experiment\\verify_fixture_on_1a2.py",
+    "sha256": "ec2bb49596f25449144964bdf74e09c79f7695a972e096265aa5aca5bcca78e1",
+    "bytes": 3480
+  },
+  "backup_file.py": {
+    "original_source": "D:\\Karnataka Guide\\scratch\\level2_rerank_experiment\\backup_file.py",
+    "sha256": "719a7417dfc6580bc0c55b3ce543f933301cc3cf44982169299898e5469e4891",
+    "bytes": 1601
+  },
+  "canonical_24_queries.json": {
+    "original_source": "D:\\Karnataka Guide\\scratch\\level2_rerank_experiment\\canonical_24_queries.json",
+    "sha256": "dba792d978f56b994857c32ae5e8421f2361c2515fa3bec99d43285ca550ca6f",
+    "bytes": 8286
+  },
+  "run_full_real_benchmark.py": {
+    "original_source": "D:\\Karnataka Guide\\backend\\scratch\\run_full_real_benchmark.py",
+    "sha256": "ae17c843f347c7b7628992397c7d94f4bebd2db958bc2b93c884b4ed8d834313",
+    "bytes": 21414
+  },
+  "task-18649.log": {
+    "original_source": "C:\\Users\\91998\\.gemini\\antigravity-ide\\brain\\31746e1c-9193-4204-a830-f1fae8ffec9f\\.system_generated\\tasks\\task-18649.log",
+    "sha256": "6b04e5729c9d9f84d9f9bb3289bf323025bdaf17fa479f9d213fc6b6657cfec0",
+    "bytes": 13186
+  },
+  "task-18617.log": {
+    "original_source": "C:\\Users\\91998\\.gemini\\antigravity-ide\\brain\\31746e1c-9193-4204-a830-f1fae8ffec9f\\.system_generated\\tasks\\task-18617.log",
+    "sha256": "0ed95f16326d306df50c6415c36f89e23dd9f44a716e34fc4fefd22a52220c54",
+    "bytes": 4217
+  },
+  "task-18564.log": {
+    "original_source": "C:\\Users\\91998\\.gemini\\antigravity-ide\\brain\\31746e1c-9193-4204-a830-f1fae8ffec9f\\.system_generated\\tasks\\task-18564.log",
+    "sha256": "f3f976c8f777b5844d09d34700dc90d1756f31d16e8b21b20c1b97d987500d22",
+    "bytes": 16993
+  },
+  "task-18546.log": {
+    "original_source": "C:\\Users\\91998\\.gemini\\antigravity-ide\\brain\\31746e1c-9193-4204-a830-f1fae8ffec9f\\.system_generated\\tasks\\task-18546.log",
+    "sha256": "2329f611550842929da4f5cb919f27800470dd2ef44653bb10b4864c3d2d8a56",
+    "bytes": 2548
+  },
+  "backup_20260927_125650_manifest.json": {
+    "original_source": "D:\\Karnataka Guide\\backups\\20260927_125650\\manifest.json",
+    "sha256": "6faceede5a8142a7ce6c7909517af14c44dbe94d8b5136439d45a6b81eba0264",
+    "bytes": 318
+  },
+  "backup_20260927_125650_BENCHMARKS.md": {
+    "original_source": "D:\\Karnataka Guide\\backups\\20260927_125650\\docs\\BENCHMARKS.md",
+    "sha256": "209949f8c58aca8bde38be38c2a74e3f26bce409c47f1e5b9b17f6c658fdd6d5",
+    "bytes": 50550
+  },
+  "docs_BENCHMARKS.md": {
+    "original_source": "D:\\Karnataka Guide\\docs\\BENCHMARKS.md",
+    "sha256": "055aa579d2955da447b7eedb585e5649a3d94961b81dd807bcd7516a346766b7",
+    "bytes": 59096
+  }
+}

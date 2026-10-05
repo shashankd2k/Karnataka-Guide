@@ -1,0 +1,59 @@
+{
+  "status": "PASS",
+  "initial_pid": "1",
+  "pid_stable": true,
+  "zero_reload": true,
+  "results": [
+    {
+      "turn": "Turn 1",
+      "query": "Who built Belur temple?",
+      "runner_pid": "1",
+      "pid_preserved": true,
+      "load_duration_ms": 57.02,
+      "prompt_eval_ms": 69205.47,
+      "eval_ms": 14299.33,
+      "eval_count": 32,
+      "ttft_ms": 69262.49,
+      "tokens_per_sec": 2.24,
+      "wall_latency_ms": 100236.04,
+      "ollama_rss_mb": 18.8,
+      "wsl_avail_ram_mb": 650.3,
+      "swap_mb": 962.2,
+      "answer": "The Belur temple, also known as the Belur Hindu Temple, is a"
+    },
+    {
+      "turn": "Turn 2",
+      "query": "What stone was used at Belur?",
+      "runner_pid": "1",
+      "pid_preserved": true,
+      "load_duration_ms": 21.99,
+      "prompt_eval_ms": 817.75,
+      "eval_ms": 4674.08,
+      "eval_count": 32,
+      "ttft_ms": 839.74,
+      "tokens_per_sec": 6.85,
+      "wall_latency_ms": 6712.77,
+      "ollama_rss_mb": 18.9,
+      "wsl_avail_ram_mb": 615.6,
+      "swap_mb": 1007.3,
+      "answer": "The primary stone used in the construction of the temples at"
+    },
+    {
+      "turn": "Turn 3",
+      "query": "Who commissioned Halebidu temple?",
+      "runner_pid": "1",
+      "pid_preserved": true,
+      "load_duration_ms": 3.62,
+      "prompt_eval_ms": 1089.94,
+      "eval_ms": 5375.32,
+      "eval_count": 32,
+      "ttft_ms": 1093.56,
+      "tokens_per_sec": 5.95,
+      "wall_latency_ms": 7119.88,
+      "ollama_rss_mb": 19.0,
+      "wsl_avail_ram_mb": 605.2,
+      "swap_mb": 1005.4,
+      "answer": "The Halebidu temple, also known as the Hoysaleswara Temple, "
+    }
+  ]
+}

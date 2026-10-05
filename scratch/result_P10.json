@@ -1,0 +1,17 @@
+{
+  "qid": "P10",
+  "status": "PASS",
+  "generated_tokens": 58,
+  "prompt_tokens": 787,
+  "prompt_eval_dur_ms": 183663.738,
+  "pe_tok_s": 4.29,
+  "eval_dur_ms": 73577.767,
+  "gen_tok_s": 0.79,
+  "load_dur_ms": 77.039421,
+  "wall_ms": 258298.31,
+  "sentence_complete": true,
+  "runaway_detected": false,
+  "truncated": false,
+  "sentence_count": 2,
+  "answer": "Halebidu is approximately 15 kilometers north of Belur. Tourists can travel between them by road using a shared auto-rickshaw or taxi, which is a common and convenient mode of transportation in the region."
+}

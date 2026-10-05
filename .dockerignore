@@ -1,0 +1,40 @@
+# Git metadata
+.git
+.gitignore
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Python virtual environment and bytecode
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Frontend dependencies and compilation output
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Local storage, database data, and backups
+backend/storage/mysql8_data/
+storage/mysql8_data/
+backend/storage/temp_audio/*
+storage/temp_audio/*
+backups/
+*.sql
+*.tar.gz
+
+# IDE and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

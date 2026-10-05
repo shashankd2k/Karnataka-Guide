@@ -1,0 +1,17 @@
+{
+  "output_p50": 93.0,
+  "output_p90": 159.5,
+  "output_p95": 174.6,
+  "output_max": 186,
+  "output_min": 0,
+  "output_mean": 80.9,
+  "runaway_responses": 0,
+  "truncated_responses": 0,
+  "incomplete_sentences": 0,
+  "max_single_turn_input": 895,
+  "max_single_turn_total": 1068,
+  "max_5turn_total": 1211,
+  "headroom_single_turn": 468,
+  "headroom_5turn": 325,
+  "num_ctx_1536_safe": true
+}
